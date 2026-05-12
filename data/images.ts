@@ -14,20 +14,6 @@ export type Video = {
 
 export const shopImages: ShopImage[] = [
   {
-    "slug": "1000004347",
-    "alt": "Saw Service 3G — on-site shop work",
-    "category": "portrait",
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "formats": [
-      "webp",
-      "avif"
-    ]
-  },
-  {
     "slug": "img20251029123655",
     "alt": "Saw Service 3G — on-site shop work",
     "category": "portrait",
