@@ -10,9 +10,23 @@ const TURNSTILE_VERIFY = "https://challenges.cloudflare.com/turnstile/v0/sitever
 export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
-  // CSRF / origin guard — same-origin only
+  // CSRF / origin guard — require same-host Origin OR same-host Referer.
+  // Rejects requests with no/empty origin (previous bug: missing headers
+  // bypassed the check entirely).
   const origin = req.headers.get("origin");
-  if (origin && new URL(origin).host !== req.headers.get("host")) {
+  const referer = req.headers.get("referer");
+  const host = req.headers.get("host");
+
+  const sameOrigin = (url: string | null): boolean => {
+    if (!url || !host) return false;
+    try {
+      return new URL(url).host === host;
+    } catch {
+      return false;
+    }
+  };
+
+  if (!sameOrigin(origin) && !sameOrigin(referer)) {
     return NextResponse.json({ ok: false, error: "Bad origin" }, { status: 400 });
   }
 

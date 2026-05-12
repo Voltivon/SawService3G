@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "Bash(npm run build)",
+      "Bash(npm run dev)",
+      "Bash(npm run lint)",
+      "Bash(npm run start)",
+      "Bash(npm run images)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx eslint .)",
+      "Bash(npm view *)",
+      "Bash(npm audit)",
+      "Bash(npm audit --omit=dev)",
+      "mcp__dataforseo__on_page_content_parsing",
+      "mcp__dataforseo__on_page_instant_pages",
+      "mcp__dataforseo__on_page_lighthouse",
+      "mcp__dataforseo__serp_organic_live_advanced",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_overview",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_suggestions",
+      "mcp__dataforseo__dataforseo_labs_google_keyword_ideas",
+      "mcp__dataforseo__dataforseo_labs_google_related_keywords",
+      "mcp__dataforseo__dataforseo_labs_bulk_keyword_difficulty",
+      "mcp__dataforseo__dataforseo_labs_search_intent",
+      "mcp__dataforseo__dataforseo_labs_google_serp_competitors",
+      "mcp__dataforseo__kw_data_google_ads_search_volume",
+      "mcp__dataforseo__kw_data_google_trends_explore",
+      "mcp__dataforseo__domain_analytics_technologies_domain_technologies",
+      "mcp__dataforseo__backlinks_summary",
+      "mcp__dataforseo__backlinks_referring_domains",
+      "mcp__dataforseo__backlinks_competitors",
+      "mcp__local-falcon__getLocalFalconReport",
+      "mcp__local-falcon__searchForLocalFalconBusinessLocation",
+      "mcp__local-falcon__listAllLocalFalconLocations",
+      "mcp__local-falcon__viewLocalFalconAccountInformation"
+    ]
+  }
+}

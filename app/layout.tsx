@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { site } from "@/data/site";
 import {
@@ -9,6 +10,7 @@ import {
   websiteJsonLd,
   reviewJsonLd,
   organizationCustomersJsonLd,
+  safeJsonLd,
 } from "@/lib/jsonld";
 
 const inter = Inter({
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     default: `Industrial Band Saw Repair · Houston, TX | ${site.name}`,
     template: `%s · ${site.name}`,
   },
-  description: `Authorized Hyd-Mech dealer. 25 years, 3rd-generation family-owned. Mobile industrial band saw repair, anchoring & maintenance from Spring, TX across Greater Houston & surrounding states. Call ${site.phone.display}.`,
+  description: `Authorized Hyd-Mech dealer. 25 years, 3rd-gen family-owned. Mobile industrial band saw repair, anchoring & maintenance from Spring, TX. Call ${site.phone.display}.`,
   applicationName: site.name,
   keywords: [
     "industrial band saw repair",
@@ -52,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: `Industrial Band Saw Repair · Houston, TX | ${site.name}`,
-    description: `Mobile industrial band saw repair, anchoring & maintenance across Houston & surrounding states. 20+ years. Any saw. Any shop.`,
+    description: `Mobile industrial band saw repair, anchoring & maintenance across Houston & surrounding states. 25 years. Any saw. Any shop.`,
     url: site.url,
     siteName: site.name,
     locale: "en_US",
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — Industrial Band Saw Repair, Houston TX`,
-    description: `Mobile, on-site industrial band saw repair, anchoring & maintenance. 20+ yrs. Houston + surrounding states.`,
+    description: `Mobile, on-site industrial band saw repair, anchoring & maintenance. 25 yrs. Houston + surrounding states.`,
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
@@ -85,40 +87,41 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <GoogleAnalytics gaId="G-5V1G92HRCM" />
         {children}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd()),
+            __html: safeJsonLd(localBusinessJsonLd()),
           }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(websiteJsonLd()) }}
         />
         {servicesJsonLd().map((s, i) => (
           <script
             key={`svc-${i}`}
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+            dangerouslySetInnerHTML={{ __html: safeJsonLd(s) }}
           />
         ))}
         {reviewJsonLd().map((r, i) => (
           <script
             key={`rev-${i}`}
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(r) }}
+            dangerouslySetInnerHTML={{ __html: safeJsonLd(r) }}
           />
         ))}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationCustomersJsonLd()),
+            __html: safeJsonLd(organizationCustomersJsonLd()),
           }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(faqJsonLd()) }}
         />
       </body>
     </html>

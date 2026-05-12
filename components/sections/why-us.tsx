@@ -7,7 +7,7 @@ const pillars = [
     Icon: Users,
     title: "3rd Generation",
     blurb:
-      "25 years and three generations on the same band saws. Kaylen, Mason, and the legacy of &ldquo;DoAll Dave&rdquo; behind every job.",
+      "25 years and three generations on the same band saws. Kaylen, Mason, and the legacy of “DoAll Dave” behind every job.",
   },
   {
     Icon: ShieldCheck,
@@ -19,7 +19,7 @@ const pillars = [
     Icon: Truck,
     title: "Mobile / On-Site",
     blurb:
-      "We come to you. 100-mile primary radius from Spring, TX — and we&rsquo;ll travel farther for the right customer.",
+      "We come to you. 100-mile primary radius from Spring, TX — and we’ll travel farther for the right customer.",
   },
   {
     Icon: Award,
@@ -59,10 +59,9 @@ export function WhyUs() {
               <h3 className="mt-5 font-display text-lg font-bold text-white">
                 {p.title}
               </h3>
-              <p
-                className="mt-2 text-sm leading-relaxed text-ink-300"
-                dangerouslySetInnerHTML={{ __html: p.blurb }}
-              />
+              <p className="mt-2 text-sm leading-relaxed text-ink-300">
+                {p.blurb}
+              </p>
             </Reveal>
           ))}
         </div>

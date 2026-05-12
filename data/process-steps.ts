@@ -26,7 +26,7 @@ export const processSteps: ProcessStep[] = [
     n: 3,
     title: "Repair",
     blurb:
-      "Mechanical, hydraulic, electrical — handled by techs who've seen these machines for 20+ years.",
+      "Mechanical, hydraulic, electrical — handled by techs who've seen these machines for 25 years.",
     Icon: Wrench,
   },
   {

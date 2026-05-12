@@ -106,7 +106,7 @@ export function Footer() {
           Greater Houston, TX.
         </p>
         <p className="font-mono uppercase tracking-[0.18em] text-ink-500">
-          Twenty Years &middot; Any Saw &middot; Any Shop
+          25 Years &middot; Any Saw &middot; Any Shop
         </p>
       </div>
     </footer>

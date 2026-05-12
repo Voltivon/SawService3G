@@ -12,55 +12,58 @@ import { cn } from "@/lib/utils";
 type Slide = { caption: string; alt: string };
 
 // Captions are short on-screen labels; alts are SEO-rich, descriptive strings
-// that name the action, brand class, and location context.
+// that name the action, brand class, and location context. We vary brand
+// mentions (Marvel, HEM, Hyd-Mech), service types (anchor, repair, PM, drive
+// system, blade tracking), and location anchors (Houston, Spring TX) to avoid
+// alt-text spam.
 const slides: Slide[] = [
   {
     caption: "On-site service — Greater Houston",
-    alt: "Saw Service 3G technicians servicing an industrial band saw on-site in the Greater Houston Area",
+    alt: "Mobile industrial band saw repair on-site at a Greater Houston metal fabrication shop · Saw Service 3G",
   },
   {
     caption: "Field diagnosis under load",
-    alt: "Saw Service 3G technician diagnosing an industrial band saw drive system on the shop floor",
+    alt: "Band saw drive system field diagnosis under cutting load · Spring, TX mobile saw service",
   },
   {
     caption: "Drive system in the shop",
-    alt: "Industrial band saw drive system inspection during a Saw Service 3G mobile service call in Houston, TX",
+    alt: "Industrial band saw drive system on-site service · Greater Houston · Saw Service 3G",
   },
   {
     caption: "Anchored, leveled, verified",
-    alt: "Industrial band saw freshly anchored and leveled by Saw Service 3G at a Texas metal fabrication shop",
+    alt: "Authorized Hyd-Mech dealer technician anchoring and leveling a metal band saw · Spring, TX",
   },
   {
     caption: "Pulley & wheel service",
-    alt: "Saw Service 3G technician servicing a band saw pulley and drive wheel during a Houston-area repair call",
+    alt: "Marvel band saw wheel and pulley service during a Houston-area mobile repair call",
   },
   {
     caption: "Drive box rebuild",
-    alt: "Rebuilt industrial band saw drive box after Saw Service 3G mechanical and hydraulic repair",
+    alt: "Industrial band saw drive box rebuild — mechanical and hydraulic repair · Saw Service 3G",
   },
   {
     caption: "Hardware swap",
-    alt: "Saw Service 3G replacing worn hardware on an industrial metal band saw at a Houston steel service center",
+    alt: "Worn hardware replacement on a metal-cutting band saw at a Houston steel service center",
   },
   {
     caption: "Senior tech on site",
-    alt: "Senior Saw Service 3G technician assessing a large industrial band saw motor on a customer site",
+    alt: "Senior technician assessing a large HEM band saw motor on a customer site · Greater Houston",
   },
   {
     caption: "Multi-site service call",
-    alt: "Saw Service 3G performing a multi-site preventive maintenance round across Greater Houston manufacturing facilities",
+    alt: "Mobile metal-cutting saw preventive maintenance · Greater Houston steel service center",
   },
   {
     caption: "Large saw service",
-    alt: "Saw Service 3G technician working on a large industrial vertical band saw during a scheduled service",
+    alt: "Scheduled service on a large industrial vertical band saw · Texas metal fabricator",
   },
   {
     caption: "Drive train teardown",
-    alt: "Two Saw Service 3G technicians performing a drive train teardown on an industrial band saw at a Houston shop",
+    alt: "Two-tech drive train teardown on an industrial band saw · Houston shop floor",
   },
   {
     caption: "Maintenance round",
-    alt: "Saw Service 3G preventive maintenance round on an industrial band saw at a Texas metal fabrication facility",
+    alt: "Industrial band saw preventive maintenance and blade tracking check · Texas metal fab facility",
   },
 ];
 
@@ -229,7 +232,7 @@ export function FieldGallery() {
             {/* Progress dots — secondary indicator + scroll hint on small screens */}
             <div className="mt-4 flex items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.22em] text-ink-400">
               <span>← / → to navigate</span>
-              <span>{total} jobs · one team · 20+ years</span>
+              <span>{total} jobs · one team · 25 years</span>
             </div>
           </div>
         </Reveal>

@@ -50,7 +50,7 @@ export function About() {
             <p className="mt-3 text-base leading-relaxed text-ink-100 md:text-lg">
               People in the Greater Houston metals industry know{" "}
               <span className="font-semibold text-white">
-                "{legacy.founderNickname}"
+                &ldquo;{legacy.founderNickname}&rdquo;
               </span>{" "}
               — Kaylen&rsquo;s father — because he&rsquo;s serviced most of
               the saws our customers still run today. Saw Service 3G is the

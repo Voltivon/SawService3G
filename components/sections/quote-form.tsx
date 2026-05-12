@@ -84,8 +84,8 @@ export function QuoteForm() {
 
           <div className="mt-10 space-y-4 rounded-2xl border border-white/[0.06] bg-ink-900/40 p-6">
             <Bullet
-              eyebrow="What we&rsquo;ll need to know"
-              text="Brand &amp; model · the symptom · location · how urgent it is."
+              eyebrow="What we’ll need to know"
+              text="Brand & model · the symptom · location · how urgent it is."
             />
             <Bullet
               eyebrow="What happens next"
@@ -144,7 +144,7 @@ export function QuoteForm() {
                 autoComplete="tel"
               />
               <Field
-                label="Saw brand &amp; model"
+                label="Saw brand & model"
                 error={errors.saw?.message}
                 placeholder="e.g. Marvel 81A 9/A"
                 className="sm:col-span-2"
@@ -249,10 +249,7 @@ function Bullet({ eyebrow, text }: { eyebrow: string; text: string }) {
       <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-spark-400">
         {eyebrow}
       </p>
-      <p
-        className="mt-1 text-sm text-ink-200"
-        dangerouslySetInnerHTML={{ __html: text }}
-      />
+      <p className="mt-1 text-sm text-ink-200">{text}</p>
     </div>
   );
 }
@@ -271,8 +268,9 @@ function Field({ label, error, className, id, ref, ...rest }: FieldProps) {
       <label
         htmlFor={inputId}
         className="block text-sm font-medium text-ink-100"
-        dangerouslySetInnerHTML={{ __html: label }}
-      />
+      >
+        {label}
+      </label>
       <input
         id={inputId}
         ref={ref}

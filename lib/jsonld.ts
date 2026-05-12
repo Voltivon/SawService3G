@@ -7,6 +7,18 @@ import { team } from "@/data/team";
 import { testimonials } from "@/data/testimonials";
 import { brands } from "@/data/brands";
 
+/**
+ * Serializes a JSON-LD payload for safe inline embedding inside a
+ * `<script type="application/ld+json">` tag. Escapes every `<` to its
+ * unicode form so an attacker-supplied `</script>` substring inside any
+ * string field cannot terminate the script element and inject HTML.
+ * Output remains valid JSON; the unicode escape decodes back to `<` at
+ * parse time, so JSON-LD semantics are unchanged.
+ */
+export function safeJsonLd<T>(payload: T): string {
+  return JSON.stringify(payload).replace(/</g, "\\u003c");
+}
+
 const LB_ID = `${site.url}/#localbusiness`;
 
 export function localBusinessJsonLd() {

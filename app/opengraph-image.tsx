@@ -45,7 +45,7 @@ export default function OG() {
               boxShadow: "0 0 18px #fb923c",
             }}
           />
-          <div style={{ display: "flex" }}>20+ Years · Mobile Saw Service</div>
+          <div style={{ display: "flex" }}>25 Years · Mobile Saw Service</div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>

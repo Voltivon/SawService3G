@@ -16,11 +16,19 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // 'unsafe-inline' stays: Next.js hydration scripts + inline JSON-LD
+      // both require it. Removing 'unsafe-eval' — React Three Fiber /
+      // three.js do not use Function/eval in production builds and Next
+      // emits an eval-free runtime. If R3F regresses, restore 'unsafe-eval'
+      // and document the reason here.
+      // googletagmanager.com is required for the GA snippet loaded via
+      // @next/third-parties/google.
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://api.resend.com",
+      // GA beacon endpoints + Resend API.
+      "connect-src 'self' https://api.resend.com https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",

@@ -71,6 +71,12 @@ export function Faq() {
         }
         .animate-acc-down { animation: acc-down 280ms cubic-bezier(0.22, 1, 0.36, 1); }
         .animate-acc-up { animation: acc-up 220ms cubic-bezier(0.22, 1, 0.36, 1); }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-acc-down,
+          .animate-acc-up {
+            animation: none !important;
+          }
+        }
       `}</style>
     </section>
   );

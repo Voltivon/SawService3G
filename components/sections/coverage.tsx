@@ -47,16 +47,21 @@ export function Coverage() {
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-spark-400">
               Greater Houston cities served
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-ink-300">
+            <ul
+              role="list"
+              className="mt-3 flex flex-wrap gap-x-2 gap-y-1 text-sm leading-relaxed text-ink-300"
+            >
               {citiesServed.map((c, i) => (
-                <span key={c}>
-                  <span className="text-ink-200">{c}</span>
+                <li key={c} className="text-ink-200">
+                  {c}
                   {i < citiesServed.length - 1 && (
-                    <span className="text-ink-500"> &middot; </span>
+                    <span className="text-ink-500"> · </span>
                   )}
-                </span>
+                </li>
               ))}
-              <span className="text-ink-500"> — and surrounding metros</span>
+            </ul>
+            <p className="mt-1 text-sm leading-relaxed text-ink-500">
+              — and surrounding metros
             </p>
           </Reveal>
         </div>
