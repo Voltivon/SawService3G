@@ -1,31 +1,31 @@
-import { Award, Truck, Cog, Receipt } from "lucide-react";
+import { Award, Truck, ShieldCheck, Users } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/sections/services";
 
 const pillars = [
   {
-    Icon: Award,
-    title: "20+ Years In",
+    Icon: Users,
+    title: "3rd Generation",
     blurb:
-      "Two decades of band saws, brand to brand. Pattern recognition you can&rsquo;t fake.",
+      "25 years and three generations on the same band saws. Kaylen, Mason, and the legacy of &ldquo;DoAll Dave&rdquo; behind every job.",
+  },
+  {
+    Icon: ShieldCheck,
+    title: "Authorized Hyd-Mech Dealer",
+    blurb:
+      "Factory-backed for Hyd-Mech parts, service, and warranty work. Plus deep expertise across Marvel, HEM, Amada, Behringer, and more.",
   },
   {
     Icon: Truck,
     title: "Mobile / On-Site",
     blurb:
-      "We come to you. No shipping, no downtime spent waiting for a saw to ride a flatbed.",
+      "We come to you. 100-mile primary radius from Spring, TX — and we&rsquo;ll travel farther for the right customer.",
   },
   {
-    Icon: Cog,
-    title: "Multi-Brand Expertise",
-    blurb:
-      "Continental, Marvel, Tsune, HEM, Behringer, Hyd-Mech, Amada, and many more.",
-  },
-  {
-    Icon: Receipt,
+    Icon: Award,
     title: "Billed After Service",
     blurb:
-      "Quoted up front, invoiced after the work is verified done. No surprises.",
+      "Hourly with a 2–3 hour minimum plus travel. Quoted up front, invoiced after the work is verified done. Net 30 ACH.",
   },
 ];
 

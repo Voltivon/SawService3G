@@ -5,8 +5,11 @@ import { TrustStrip } from "@/components/sections/trust-strip";
 import { Services } from "@/components/sections/services";
 import { Process } from "@/components/sections/process";
 import { BrandsMarquee } from "@/components/sections/brands-marquee";
+import { TrustedBy } from "@/components/sections/trusted-by";
 import { Coverage } from "@/components/sections/coverage";
 import { WhyUs } from "@/components/sections/why-us";
+import { About } from "@/components/sections/about";
+import { Testimonials } from "@/components/sections/testimonials";
 import { FieldGallery } from "@/components/sections/field-gallery";
 import { VideoShowcase } from "@/components/sections/video-showcase";
 import { EmergencyBand } from "@/components/sections/emergency-band";
@@ -24,6 +27,9 @@ export default function Page() {
         <Services />
         <Process />
         <BrandsMarquee />
+        <TrustedBy />
+        <About />
+        <Testimonials />
         <Coverage />
         <WhyUs />
         <FieldGallery />

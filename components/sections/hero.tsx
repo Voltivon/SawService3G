@@ -29,7 +29,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          20+ Years &middot; Mobile · On-Site Service
+          25 Years &middot; 3rd Generation &middot; Authorized Hyd-Mech Dealer
         </motion.p>
 
         <motion.h1

@@ -7,6 +7,8 @@ import {
   faqJsonLd,
   servicesJsonLd,
   websiteJsonLd,
+  reviewJsonLd,
+  organizationCustomersJsonLd,
 } from "@/lib/jsonld";
 
 const inter = Inter({
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     default: `Industrial Band Saw Repair · Houston, TX | ${site.name}`,
     template: `%s · ${site.name}`,
   },
-  description: `Mobile industrial band saw repair, anchoring & maintenance across Houston, TX & surrounding states. 20+ yrs. Marvel, HEM, Amada, Hyd-Mech & more. Call ${site.phone.display}.`,
+  description: `Authorized Hyd-Mech dealer. 25 years, 3rd-generation family-owned. Mobile industrial band saw repair, anchoring & maintenance from Spring, TX across Greater Houston & surrounding states. Call ${site.phone.display}.`,
   applicationName: site.name,
   keywords: [
     "industrial band saw repair",
@@ -101,6 +103,19 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
           />
         ))}
+        {reviewJsonLd().map((r, i) => (
+          <script
+            key={`rev-${i}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(r) }}
+          />
+        ))}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationCustomersJsonLd()),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd()) }}

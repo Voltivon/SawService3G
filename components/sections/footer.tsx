@@ -37,6 +37,12 @@ export function Footer() {
             ))}
             <p className="pt-2 text-ink-300">{site.hours.weekdays}</p>
             <p className="text-ink-400">{site.hours.note}</p>
+            <address className="not-italic pt-3 text-ink-300">
+              {site.address.streetAddress}
+              <br />
+              {site.address.locality}, {site.address.state}{" "}
+              {site.address.postalCode}
+            </address>
           </div>
         </div>
 
@@ -60,8 +66,16 @@ export function Footer() {
           <h3 className="eyebrow">Brands serviced</h3>
           <ul className="mt-4 space-y-2 text-sm">
             {brands.map((b) => (
-              <li key={b} className="text-ink-200">
-                {b}
+              <li
+                key={b.name}
+                className={b.authorized ? "text-white" : "text-ink-200"}
+              >
+                {b.name}
+                {b.authorized && (
+                  <span className="ml-2 font-mono text-[10px] uppercase tracking-[0.18em] text-spark-400">
+                    Authorized
+                  </span>
+                )}
               </li>
             ))}
             <li className="text-spark-400">{brandsExtra}</li>

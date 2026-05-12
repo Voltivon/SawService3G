@@ -6,8 +6,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years in business", sub: "Since 2005" },
-  { value: 20, suffix: "+", label: "Active customers", sub: "B2B accounts" },
-  { value: 9, suffix: "+", label: "Brands serviced", sub: "And many more" },
+  { value: 25, suffix: " yrs", label: "In the saw business", sub: "Since 2001" },
+  { value: 3, suffix: "rd", label: "Generation family-owned", sub: "3G — three generations" },
+  { value: 9, suffix: "+", label: "Industrial accounts", sub: "Steel, fab, CNC" },
   { value: 100, suffix: "%", label: "Mobile / on-site", sub: "We come to you" },
 ];
