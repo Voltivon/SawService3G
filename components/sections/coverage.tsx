@@ -33,7 +33,7 @@ export function Coverage() {
                 <span className="text-spark-500">Multi-state on call.</span>
               </>
             }
-            lede="Our trucks roll out of the Greater Houston Area and serve customers across Texas plus surrounding states. If your facility runs an industrial saw, we can probably get to it."
+            lede="We roll out of the Greater Houston Area and serve customers across Texas plus surrounding states. If your facility runs an industrial saw, we can probably get to it."
           />
 
           <Reveal delay={0.15} className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3">

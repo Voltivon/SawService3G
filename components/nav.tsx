@@ -282,9 +282,14 @@ function DesktopNav({ onHome }: { onHome: boolean }) {
         </NavMenu.Item>
       </NavMenu.List>
 
-      {/* Floating panel — Radix positions Content via this Viewport. */}
-      <div className="absolute left-0 top-full flex w-full justify-start">
-        <NavMenu.Viewport className="nav-viewport relative mt-2 w-fit overflow-hidden rounded-2xl border border-white/[0.06] bg-ink-950/95 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.6)] backdrop-blur-md" />
+      {/* Floating panel — Radix positions Content via this Viewport.
+          Viewport sizes itself from --radix-navigation-menu-viewport-width/height,
+          which Radix measures off-DOM from the active Content's intrinsic size.
+          `w-fit` does NOT work here because Content is position:absolute (removed
+          from flow), so `fit-content` would resolve to 0 and the panel would be
+          invisible. */}
+      <div className="absolute left-0 top-full flex justify-start">
+        <NavMenu.Viewport className="nav-viewport relative mt-2 h-(--radix-navigation-menu-viewport-height) w-(--radix-navigation-menu-viewport-width) overflow-hidden rounded-2xl border border-white/[0.06] bg-ink-950/95 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.6)] backdrop-blur-md transition-[width,height] duration-200" />
       </div>
     </NavMenu.Root>
   );

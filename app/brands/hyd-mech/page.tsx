@@ -445,8 +445,8 @@ export default function HydMechBrandPage() {
                 Houston, Texas — and surrounding states.
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ink-300 md:text-lg">
-                Our trucks roll out of Spring, TX with a 100-mile primary
-                radius covering the Greater Houston Area. Hyd-Mech accounts
+                We roll out of Spring, TX with a 100-mile primary radius
+                covering the Greater Houston Area. Hyd-Mech accounts
                 across Louisiana, Oklahoma, Arkansas, New Mexico, and
                 Mississippi are also on the schedule for larger jobs.
               </p>
