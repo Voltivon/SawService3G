@@ -33,23 +33,28 @@ export const metadata: Metadata = {
   },
   description: `Authorized Hyd-Mech dealer. 25 years, 3rd-gen family-owned. Mobile industrial band saw repair, anchoring & maintenance from Spring, TX. Call ${site.phone.display}.`,
   applicationName: site.name,
+  // All 16 phrases below have measurable US monthly volume per DataForSEO
+  // (dataforseo_labs_google_keyword_overview, 2026-05-12). Ordered by impact
+  // on this niche: brand-cluster head terms first, generic service second,
+  // long-tail parts/welding third. Replaced 10 sub-floor phrases from the
+  // prior list with brand-cluster winners.
   keywords: [
-    "industrial band saw repair",
-    "metal band saw repair Houston",
-    "band saw repair Houston",
-    "mobile band saw repair Texas",
-    "band saw anchoring",
-    "band saw relocation",
-    "Marvel band saw repair",
-    "HEM Saw service",
-    "Amada saw repair",
-    "Hyd-Mech repair",
-    "Behringer saw repair",
-    "Tsune saw repair",
-    "preventive maintenance saw",
-    "metal fabrication saw service Houston",
-    "saw blade tracking repair",
-    "saw drive system repair",
+    "hyd-mech band saw",       // 480/mo · HIGH · transactional
+    "saw service",             // 260/mo · LOW (KD 3) · commercial
+    "saw repair near me",      // 210/mo · LOW (KD 16) · commercial
+    "band saw repair",         //  90/mo · LOW (KD 12) · transactional
+    "band saw repair near me", //  90/mo · LOW (KD 16) · transactional
+    "band saw service",        //  30/mo · LOW (KD 3) · commercial
+    "hem saw",                 // 1300/mo · KD 4 · transactional
+    "metal cutting band saw",  // 2900/mo · HIGH · transactional
+    "band saw blade welding",  // 720/mo · HIGH · transactional
+    "behringer saw",           // 480/mo · LOW (KD 7) · transactional
+    "marvel band saw",         // 390/mo · HIGH · transactional
+    "amada saw",               // 320/mo · HIGH · navigational
+    "amada band saw",          // 210/mo · HIGH · transactional
+    "hem bandsaw",             // 170/mo · KD 12 · transactional
+    "hem saw parts",           // 110/mo · LOW · transactional
+    "tsune saw",               // 110/mo · LOW (KD 22) · navigational
   ],
   openGraph: {
     type: "website",

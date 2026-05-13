@@ -2,21 +2,40 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Phone } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { href: "#services", label: "Services" },
-  { href: "#brands", label: "Brands" },
-  { href: "#about", label: "About" },
-  { href: "#coverage", label: "Coverage" },
-  { href: "#quote", label: "Get a Quote" },
+type NavLink = {
+  /** Hash on the home page (e.g. "services") OR a fully-qualified path. */
+  href: string;
+  label: string;
+  /** If true, `href` is an absolute path; otherwise it's a home-page anchor. */
+  absolute?: boolean;
+  /** Subtle visual emphasis (used for the new Hyd-Mech entry). */
+  accent?: boolean;
+};
+
+const links: NavLink[] = [
+  { href: "services", label: "Services" },
+  { href: "brands", label: "Brands" },
+  {
+    href: "/services/hyd-mech-band-saw-repair",
+    label: "Hyd-Mech",
+    absolute: true,
+    accent: true,
+  },
+  { href: "about", label: "About" },
+  { href: "coverage", label: "Coverage" },
+  { href: "quote", label: "Get a Quote" },
 ];
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const onHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -41,17 +60,29 @@ export function Nav() {
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-6 md:flex lg:gap-8"
         >
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm font-medium text-ink-200 transition-colors hover:text-white"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) => {
+            const resolved = l.absolute
+              ? l.href
+              : onHome
+                ? `#${l.href}`
+                : `/#${l.href}`;
+            return (
+              <Link
+                key={`${l.label}-${l.href}`}
+                href={resolved}
+                className={cn(
+                  "text-sm font-medium transition-colors",
+                  l.accent
+                    ? "text-spark-300 hover:text-spark-200"
+                    : "text-ink-200 hover:text-white",
+                )}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <a

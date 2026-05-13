@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { brands, brandsExtra, type Brand } from "@/data/brands";
 import { Reveal } from "@/components/motion/reveal";
 
@@ -23,9 +24,15 @@ export function BrandsMarquee() {
             25 years of saws.{" "}
             <span className="text-ink-300">All brands. All shops.</span>
           </h2>
-          <p className="mt-4 max-w-xl font-mono text-[11px] uppercase tracking-[0.22em] text-spark-400">
+          <Link
+            href="/brands/hyd-mech"
+            className="mt-4 inline-flex max-w-xl items-center gap-2 rounded-full border border-spark-500/40 bg-spark-500/10 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.22em] text-spark-300 transition-colors hover:border-spark-500/60 hover:bg-spark-500/15 hover:text-spark-200"
+          >
             Authorized Hyd-Mech Dealer
-          </p>
+            <span aria-hidden className="text-spark-400">
+              &rarr;
+            </span>
+          </Link>
         </Reveal>
       </div>
 
