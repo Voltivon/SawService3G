@@ -296,7 +296,14 @@ const triggerClass =
 const linkClass =
   "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium text-ink-200 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-spark-500/60";
 
-const contentClass = "nav-content absolute left-0 top-0 w-full";
+// Radix NavMenu.Content lives inside NavMenu.Viewport. We position absolutely
+// so multiple Contents can occupy the same space during the cross-fade between
+// dropdowns, but we do NOT set width — each inner panel sets its own width
+// (`w-[560px]` / `w-[280px]`) and the Viewport (`w-fit`) sizes to whichever
+// Content is mounted. Setting `w-full` here created a circular constraint
+// where Content wanted to match Viewport's width while Viewport tried to size
+// to Content, collapsing the dropdown to zero width.
+const contentClass = "nav-content absolute left-0 top-0";
 
 function DropdownLink({
   entry,

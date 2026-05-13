@@ -17,13 +17,16 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // 'unsafe-inline' stays: Next.js hydration scripts + inline JSON-LD
-      // both require it. Removing 'unsafe-eval' — React Three Fiber /
-      // three.js do not use Function/eval in production builds and Next
-      // emits an eval-free runtime. If R3F regresses, restore 'unsafe-eval'
-      // and document the reason here.
+      // both require it.
+      // 'unsafe-eval' is RESTORED: while three.js itself doesn't use eval(),
+      // React Three Fiber + @react-three/drei + Next.js's dev runtime use
+      // `new Function(...)` for shader / reconciler hot paths. Removing it
+      // caused the hero R3F blade to fail to render on dev and prod alike
+      // (verified by Human CEO 2026-05-13). Restoring documented residual
+      // risk per CLAUDE.md §5 Pentest Notes.
       // googletagmanager.com is required for the GA snippet loaded via
       // @next/third-parties/google.
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com",
       "font-src 'self' data:",
