@@ -198,6 +198,91 @@
     0%   { transform: scale(0.4); opacity: 0.9; }
     100% { transform: scale(2.6); opacity: 0; }
   }
+
+  /* ---------------------------------------------------------------------
+     Nav: Radix NavigationMenu + Dialog + Accordion animation hooks.
+     The class hooks (.nav-viewport, .nav-content, .nav-overlay, .nav-drawer,
+     .nav-accordion) read Radix's `data-state` and `data-motion` attributes.
+     We use plain CSS keyframes here instead of tailwindcss-animate to keep
+     the dep list short.
+  --------------------------------------------------------------------- */
+
+  /* Desktop dropdown panel — fade + slide-down on open */
+  .nav-viewport[data-state="open"] {
+    animation: nav-fade-in 160ms ease-out;
+  }
+  .nav-viewport[data-state="closed"] {
+    animation: nav-fade-out 120ms ease-in;
+  }
+
+  /* Dropdown content slides horizontally between dropdowns */
+  .nav-content[data-motion="from-start"] {
+    animation: nav-slide-from-left 200ms ease-out;
+  }
+  .nav-content[data-motion="from-end"] {
+    animation: nav-slide-from-right 200ms ease-out;
+  }
+  .nav-content[data-motion="to-start"] {
+    animation: nav-slide-to-left 200ms ease-in;
+  }
+  .nav-content[data-motion="to-end"] {
+    animation: nav-slide-to-right 200ms ease-in;
+  }
+
+  /* Mobile drawer overlay + sheet */
+  .nav-overlay[data-state="open"] {
+    animation: nav-fade-in 200ms ease-out;
+  }
+  .nav-overlay[data-state="closed"] {
+    animation: nav-fade-out 160ms ease-in;
+  }
+  .nav-drawer[data-state="open"] {
+    animation: nav-slide-from-right 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-drawer[data-state="closed"] {
+    animation: nav-slide-to-right 200ms cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  /* Mobile accordion — height + opacity, driven by Radix's CSS var */
+  .nav-accordion[data-state="open"] {
+    animation: nav-accordion-down 220ms ease-out;
+  }
+  .nav-accordion[data-state="closed"] {
+    animation: nav-accordion-up 180ms ease-in;
+  }
+
+  @keyframes nav-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes nav-fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes nav-slide-from-right {
+    from { transform: translateX(8px); opacity: 0; }
+    to   { transform: translateX(0);   opacity: 1; }
+  }
+  @keyframes nav-slide-from-left {
+    from { transform: translateX(-8px); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+  }
+  @keyframes nav-slide-to-right {
+    from { transform: translateX(0);  opacity: 1; }
+    to   { transform: translateX(8px); opacity: 0; }
+  }
+  @keyframes nav-slide-to-left {
+    from { transform: translateX(0);   opacity: 1; }
+    to   { transform: translateX(-8px); opacity: 0; }
+  }
+  @keyframes nav-accordion-down {
+    from { height: 0;                                opacity: 0; }
+    to   { height: var(--radix-accordion-content-height); opacity: 1; }
+  }
+  @keyframes nav-accordion-up {
+    from { height: var(--radix-accordion-content-height); opacity: 1; }
+    to   { height: 0;                                opacity: 0; }
+  }
 }
 
 /* Reduced motion — kill the loops, keep the layout */
@@ -205,7 +290,12 @@
   .marquee-track,
   .marquee-track-rev,
   .dot-spark::before,
-  .pulse-ring {
+  .pulse-ring,
+  .nav-viewport[data-state],
+  .nav-content[data-motion],
+  .nav-overlay[data-state],
+  .nav-drawer[data-state],
+  .nav-accordion[data-state] {
     animation: none !important;
   }
   html { scroll-behavior: auto; }

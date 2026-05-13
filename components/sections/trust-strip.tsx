@@ -17,7 +17,7 @@ export function TrustStrip() {
             className="bg-ink-950/80 p-6 md:p-8"
           >
             <p className="font-display text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-              <Counter to={s.value} suffix={s.suffix} />
+              <Counter to={s.value} suffix={s.suffix} delay={i * 0.12} />
             </p>
             <p className="mt-2 text-sm font-semibold text-ink-100">
               {s.label}
