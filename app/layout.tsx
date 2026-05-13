@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -11,6 +12,7 @@ import {
   organizationCustomersJsonLd,
   safeJsonLd,
 } from "@/lib/jsonld";
+import { PageViewTracker } from "@/components/analytics/page-view-tracker";
 
 // Google Analytics 4 measurement ID.
 // Update here AND in CLAUDE.md §4 + agent docs if the property changes.
@@ -114,6 +116,11 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        {/* Fires page_view on every Next soft navigation. Suspense wrap is
+            required because useSearchParams triggers static bailout. */}
+        <Suspense fallback={null}>
+          <PageViewTracker gaId={GA_ID} />
+        </Suspense>
         {children}
         <script
           type="application/ld+json"
