@@ -75,7 +75,7 @@ Write to `docs/reviews/<short-commit-hash>.md`:
 For each touched page, list pass/fail for every item in CLAUDE.md §4. **Every fail = blocking.** *Also confirm the SEO Agent's Workflow B post-launch hand-off has been received and includes Lighthouse + geo-grid numbers.*
 
 **Site-wide checks (run once per review, not per page):**
-- **Google tag (`G-5V1G92HRCM`) injected exactly once** in `app/layout.tsx` (or equivalent root layout). Grep the diff and the layout file. Zero injections or duplicates = blocking. Verify implementation uses `@next/third-parties/google` `<GoogleAnalytics />` or `next/script` with `strategy="afterInteractive"` — never a raw `<script>` tag that ships to the client unmanaged.
+- **Google tag (`G-XDWNTPSF57`) injected exactly once** in `app/layout.tsx` (or equivalent root layout). Grep the diff and the layout file. Zero injections or duplicates = blocking. Verify implementation uses `@next/third-parties/google` `<GoogleAnalytics />` or `next/script` with `strategy="afterInteractive"` — never a raw `<script>` tag that ships to the client unmanaged.
 
 ## Security pentest (for any change touching attack surface)
 - **Attack surface added:** [...]

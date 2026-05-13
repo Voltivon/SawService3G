@@ -136,7 +136,7 @@ This doc is **the spec for how the pipeline runs**. The actual subagents live in
 
 **MCPs — Workflow B (post-launch validation, mandatory):**
 - `mcp__dataforseo__on_page_lighthouse` — SEO ≥ 95, Performance ≥ 90 mobile
-- `mcp__dataforseo__on_page_instant_pages` — verify rendered HTML. Confirm exactly one Google tag (`G-5V1G92HRCM`) is present and loads from `googletagmanager.com/gtag/js`. Zero tags or duplicates = blocker.
+- `mcp__dataforseo__on_page_instant_pages` — verify rendered HTML. Confirm exactly one Google tag (`G-XDWNTPSF57`) is present and loads from `googletagmanager.com/gtag/js`. Zero tags or duplicates = blocker.
 - `mcp__local-falcon__runLocalFalconScan` + `getLocalFalconReport` — post-launch grid baseline
 
 **MCPs — Workflow C (periodic site audit, on-demand):**
@@ -274,7 +274,7 @@ Human types in chat (or via a slash command like `/add-page`):
 | 4 | Senior Engineer | Reviews the brief. If anything's missing or off, dispatches SEO again with feedback. Else dispatches Frontend with the brief. | — |
 | 5 | Frontend Agent | Creates the page file at `app/<route>/page.tsx` (or `app/<segment>/<slug>/page.tsx` for dynamic routes). Implements per the brief. Reuses existing components and design tokens. Adds the page to `sitemap.xml` route. Adds JSON-LD per the brief's schema type. | New page + sitemap entry. |
 | 6 | Backend Agent | **Skipped** unless the page needs new dynamic data or a new form handler. | — |
-| 7 | Code Reviewer | Audits the diff. Verifies SEO §2 checklist (title, description, canonical, OG, JSON-LD, h1 count, internal links, **Google tag `G-5V1G92HRCM` present exactly once in `app/layout.tsx`**). Runs Lighthouse via dataforseo `on_page_lighthouse`. | Review report; pass/fail + suggested fixes. |
+| 7 | Code Reviewer | Audits the diff. Verifies SEO §2 checklist (title, description, canonical, OG, JSON-LD, h1 count, internal links, **Google tag `G-XDWNTPSF57` present exactly once in `app/layout.tsx`**). Runs Lighthouse via dataforseo `on_page_lighthouse`. | Review report; pass/fail + suggested fixes. |
 | 8 | Senior Engineer → AI CEO | Reports phase complete. | Diff summary + Code Reviewer verdict. |
 | 9 | AI CEO → Human CEO | Push gate. | Human authorizes; CEO runs `git push`. |
 

@@ -99,7 +99,7 @@ Triggered when Senior Engineer signals "page is live."
 
 1. **Run Lighthouse** via `on_page_lighthouse` against the live URL. Targets: SEO ≥ 95, Performance ≥ 90 mobile (per `CLAUDE.md` §4).
 2. **Re-run the geo-grid scan** for the page's primary keyword via `runLocalFalconScan` → `getLocalFalconReport`. Compare against the pre-launch baseline if one exists.
-3. **Read the live HTML** via `on_page_instant_pages` to verify rendered output matches the brief — meta title, description, canonical, OG tags, JSON-LD blob, h1, structured data validity. Claude does this read manually. **Also confirm the Google tag (`G-5V1G92HRCM`) loads exactly once** — grep the rendered HTML for `googletagmanager.com/gtag/js?id=G-5V1G92HRCM` and for `gtag('config', 'G-5V1G92HRCM')`. Zero matches = page is not tracking (blocker). Two+ matches = duplicate tag (blocker — double-counts pageviews).
+3. **Read the live HTML** via `on_page_instant_pages` to verify rendered output matches the brief — meta title, description, canonical, OG tags, JSON-LD blob, h1, structured data validity. Claude does this read manually. **Also confirm the Google tag (`G-XDWNTPSF57`) loads exactly once** — grep the rendered HTML for `googletagmanager.com/gtag/js?id=G-XDWNTPSF57` and for `gtag('config', 'G-XDWNTPSF57')`. Zero matches = page is not tracking (blocker). Two+ matches = duplicate tag (blocker — double-counts pageviews).
 4. **Report findings** to Senior Engineer using the post-launch hand-off format below.
 
 ### Workflow C — Periodic site-wide audit (run monthly or on-demand)
@@ -252,7 +252,7 @@ For Workflow B (post-launch validation):
 > **Lighthouse Performance:** `<n>/100` mobile, `<n>/100` desktop (target ≥ 90 mobile) — source: `on_page_lighthouse`
 > **Geo-grid AGR (post-launch):** `<n.n>` (delta vs. brief baseline: `<+n.n / -n.n / new>`) — source: `runLocalFalconScan`
 > **Live HTML verified:** title / meta / canonical / OG / JSON-LD all match brief — source: `on_page_instant_pages` + manual read
-> **Google tag verified:** `G-5V1G92HRCM` present exactly once (loader + config) — source: `on_page_instant_pages` grep
+> **Google tag verified:** `G-XDWNTPSF57` present exactly once (loader + config) — source: `on_page_instant_pages` grep
 > **Issues:** [bulleted list of any failed audits, or "none"]
 
 For Workflow C (periodic site audit), to Senior Engineer:

@@ -90,16 +90,16 @@ Every page shipped from this repo must satisfy the following before merge. This 
 - Every `<img>` has descriptive `alt`; decorative images use `alt=""`
 - All internal links use relative paths; no broken links
 - Semantic HTML (`<header>`, `<nav>`, `<main>`, `<footer>`, `<section>`, `<article>`)
-- **Google tag (gtag.js) loaded on every page exactly once.** Measurement ID `G-5V1G92HRCM`. Inject as early in `<head>` as the framework allows (immediately after `<head>` opens per Google's spec). In Next.js App Router this means injecting it in `app/layout.tsx` — preferred implementation is `@next/third-parties/google`'s `<GoogleAnalytics gaId="G-5V1G92HRCM" />` placed inside the root `<body>`, or `next/script` with `strategy="afterInteractive"` rendering the snippet below. **Never duplicate the tag** (don't add it to individual pages if it's in the root layout). Reference snippet:
+- **Google tag (gtag.js) loaded on every page exactly once.** Measurement ID `G-XDWNTPSF57`. Inject as early in `<head>` as the framework allows (immediately after `<head>` opens per Google's spec). In Next.js App Router this means injecting it in `app/layout.tsx` — preferred implementation is `@next/third-parties/google`'s `<GoogleAnalytics gaId="G-XDWNTPSF57" />` placed inside the root `<body>`, or `next/script` with `strategy="afterInteractive"` rendering the snippet below. **Never duplicate the tag** (don't add it to individual pages if it's in the root layout). Reference snippet:
   ```html
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V1G92HRCM"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDWNTPSF57"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-5V1G92HRCM');
+    gtag('config', 'G-XDWNTPSF57');
   </script>
   ```
 
@@ -203,7 +203,7 @@ Even after AI CEO has confirmed all of the above, the actual `git push` requires
 - **SEO infrastructure:**
   - `app/sitemap.ts` — generates `/sitemap.xml` from MDX content + static routes
   - `app/robots.ts` — generates `/robots.txt`
-  - `app/layout.tsx` — global `<Metadata>` defaults **and** the Google tag (`G-5V1G92HRCM`) injected exactly once. Use `@next/third-parties/google` `<GoogleAnalytics gaId="G-5V1G92HRCM" />` or `next/script` with `strategy="afterInteractive"`. Never re-inject in child layouts or pages.
+  - `app/layout.tsx` — global `<Metadata>` defaults **and** the Google tag (`G-XDWNTPSF57`) injected exactly once. Use `@next/third-parties/google` `<GoogleAnalytics gaId="G-XDWNTPSF57" />` or `next/script` with `strategy="afterInteractive"`. Never re-inject in child layouts or pages.
   - Per-page `export const metadata` for title/description/OG/Twitter/canonical
   - `<JsonLd>` component (in `components/seo/`) for structured data
 - **Hosting:** Vercel. Auto-deploy from `main`. Push gate per §7.
