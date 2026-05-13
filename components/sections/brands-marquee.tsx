@@ -4,6 +4,17 @@ import { Reveal } from "@/components/motion/reveal";
 
 type RowItem = Brand | { name: string; extra: true };
 
+// Brand-name → service-page route. Keys are the brand `name` from `data/brands.ts`
+// (case-sensitive). Brands not listed here render as plain text in the marquee.
+const BRAND_ROUTES: Record<string, string> = {
+  "Hyd-Mech": "/services/hyd-mech-band-saw-repair",
+  "HEM Saw": "/services/hem-saw-repair",
+  Marvel: "/services/marvel-band-saw-repair",
+  Amada: "/services/amada-band-saw-repair",
+  Behringer: "/services/behringer-band-saw-repair",
+  Tsune: "/services/tsune-band-saw-repair",
+};
+
 export function BrandsMarquee() {
   const row1: RowItem[] = [...brands, { name: brandsExtra, extra: true }];
   const row2: RowItem[] = [...brands].reverse();
@@ -59,23 +70,39 @@ function MarqueeRow({
       <div className={`flex w-max gap-4 ${className}`}>
         {doubled.map((b, i) => {
           const authorized = "authorized" in b && b.authorized;
-          return (
-            <span
-              key={`${b.name}-${i}`}
-              className={`relative inline-flex items-center whitespace-nowrap rounded-full border px-6 py-3 font-display text-2xl font-bold tracking-tight md:text-3xl ${
-                authorized
-                  ? "border-spark-500/50 bg-spark-500/10 text-white"
-                  : muted
-                    ? "border-white/[0.06] bg-transparent text-ink-300"
-                    : "border-white/[0.06] bg-ink-900/40 text-white"
-              }`}
-            >
+          const route = BRAND_ROUTES[b.name];
+          const className = `relative inline-flex items-center whitespace-nowrap rounded-full border px-6 py-3 font-display text-2xl font-bold tracking-tight md:text-3xl ${
+            authorized
+              ? "border-spark-500/50 bg-spark-500/10 text-white"
+              : muted
+                ? "border-white/[0.06] bg-transparent text-ink-300"
+                : "border-white/[0.06] bg-ink-900/40 text-white"
+          } ${route ? "transition-colors hover:border-spark-500/40 hover:text-white" : ""}`;
+          const inner = (
+            <>
               {b.name}
               {authorized && (
                 <span className="ml-3 rounded-full bg-spark-500/20 px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.22em] text-spark-300">
                   Authorized Dealer
                 </span>
               )}
+            </>
+          );
+          if (route) {
+            return (
+              <Link
+                key={`${b.name}-${i}`}
+                href={route}
+                className={className}
+                aria-label={`${b.name} band saw repair`}
+              >
+                {inner}
+              </Link>
+            );
+          }
+          return (
+            <span key={`${b.name}-${i}`} className={className}>
+              {inner}
             </span>
           );
         })}

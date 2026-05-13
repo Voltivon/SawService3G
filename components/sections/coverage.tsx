@@ -1,4 +1,17 @@
+import Link from "next/link";
 import { coverage, citiesServed } from "@/data/coverage";
+
+// Cities with dedicated /service-area pages — kept here (not in data/coverage)
+// so the marketing-copy city list and the routed-page set can diverge if
+// future cities get pages without being added to the prose list, or vice versa.
+const cityRoutes: Record<string, string> = {
+  Houston: "/service-area/houston-tx",
+  Spring: "/service-area/spring-tx",
+  Katy: "/service-area/katy-tx",
+  Cypress: "/service-area/cypress-tx",
+  "The Woodlands": "/service-area/the-woodlands-tx",
+  Conroe: "/service-area/conroe-tx",
+};
 import { Reveal } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/sections/services";
 
@@ -51,14 +64,26 @@ export function Coverage() {
               role="list"
               className="mt-3 flex flex-wrap gap-x-2 gap-y-1 text-sm leading-relaxed text-ink-300"
             >
-              {citiesServed.map((c, i) => (
-                <li key={c} className="text-ink-200">
-                  {c}
-                  {i < citiesServed.length - 1 && (
-                    <span className="text-ink-500"> · </span>
-                  )}
-                </li>
-              ))}
+              {citiesServed.map((c, i) => {
+                const href = cityRoutes[c];
+                return (
+                  <li key={c}>
+                    {href ? (
+                      <Link
+                        href={href}
+                        className="text-spark-300 underline-offset-4 hover:text-spark-200 hover:underline"
+                      >
+                        {c}
+                      </Link>
+                    ) : (
+                      <span className="text-ink-200">{c}</span>
+                    )}
+                    {i < citiesServed.length - 1 && (
+                      <span className="text-ink-500"> · </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
             <p className="mt-1 text-sm leading-relaxed text-ink-500">
               — and surrounding metros
