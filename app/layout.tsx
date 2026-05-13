@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { site } from "@/data/site";
 import {
@@ -12,6 +11,10 @@ import {
   organizationCustomersJsonLd,
   safeJsonLd,
 } from "@/lib/jsonld";
+
+// Google Analytics 4 measurement ID.
+// Update here AND in CLAUDE.md §4 + agent docs if the property changes.
+const GA_ID = "G-XDWNTPSF57";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -85,6 +88,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
+      <head>
+        {/* Google tag (gtag.js) — placed immediately after <head> opens per
+            Google's spec. Inline (not next/script) so the <script> tags
+            appear in the server-rendered HTML, which is required for
+            Google's tag detector + crawlers that don't execute JS, AND
+            ensures the tag fires on every page load even if React
+            hydration fails. CSP allows this: 'unsafe-inline' in script-src
+            + googletagmanager.com whitelisted in script-src/img-src,
+            google-analytics.com in connect-src/img-src. */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+          }}
+        />
+      </head>
       <body className="bg-metal">
         <a
           href="#main"
@@ -92,7 +114,6 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <GoogleAnalytics gaId="G-XDWNTPSF57" />
         {children}
         <script
           type="application/ld+json"
