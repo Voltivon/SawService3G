@@ -183,6 +183,26 @@
     50%      { opacity: 0.55; transform: scale(0.85); }
   }
 
+  /* CSS-only saw blade fallback (used when WebGL is unavailable / R3F throws).
+     Lives in components/three/css-blade-fallback.tsx.
+     `transform-origin: 100px 100px` is in SVG view-box units (= the visual
+     center of the viewBox="0 0 200 200" canvas). We rely on the default
+     `transform-box: view-box` for SVG elements — adding `fill-box` would
+     change the origin to the element's bounding-box-local coords, which
+     is not what we want here. */
+  .css-blade-rotor {
+    transform-origin: 100px 100px;
+    animation: css-blade-spin 9s linear infinite;
+  }
+  .css-blade-hub {
+    transform-origin: 100px 100px;
+    animation: css-blade-spin 4s linear infinite reverse;
+  }
+  @keyframes css-blade-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+  }
+
   /* Map radial pulse */
   .pulse-ring {
     position: absolute;
@@ -291,6 +311,8 @@
   .marquee-track-rev,
   .dot-spark::before,
   .pulse-ring,
+  .css-blade-rotor,
+  .css-blade-hub,
   .nav-viewport[data-state],
   .nav-content[data-motion],
   .nav-overlay[data-state],

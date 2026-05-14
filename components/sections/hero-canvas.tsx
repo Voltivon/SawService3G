@@ -6,6 +6,7 @@ import { useReducedMotion } from "framer-motion";
 import { Blade } from "@/components/three/blade";
 import { Sparks } from "@/components/three/sparks";
 import { WebGLErrorBoundary } from "@/components/three/webgl-error-boundary";
+import { CssBladeFallback } from "@/components/three/css-blade-fallback";
 
 /**
  * Probe whether the browser can actually create a WebGL context.
@@ -30,13 +31,21 @@ function detectWebGL(): boolean {
   }
 }
 
+type Mode = "loading" | "r3f" | "css-blade" | "poster";
+
 export function HeroCanvas() {
   const reduce = useReducedMotion();
-  const [enabled, setEnabled] = useState(false);
+  // "loading" is the SSR + first-paint state — render a plain static poster
+  // until the browser tells us what gates apply. This avoids hydration
+  // flicker between SSR and client.
+  const [mode, setMode] = useState<Mode>("loading");
 
   useEffect(() => {
+    // User preference gates — static poster (respect reduced motion / data
+    // saver / narrow viewport, NO animated fallback for these).
     if (reduce) {
-      console.info("[HeroCanvas] reduced motion — using poster");
+      console.info("[HeroCanvas] reduced motion — static poster");
+      setMode("poster");
       return;
     }
     const mql = window.matchMedia("(min-width: 768px)");
@@ -44,34 +53,46 @@ export function HeroCanvas() {
       navigator as Navigator & { connection?: { saveData?: boolean } }
     ).connection;
     const saveData = !!conn?.saveData;
-    const webglOK = detectWebGL();
 
-    if (!mql.matches) console.info("[HeroCanvas] viewport <768px — poster");
-    if (saveData) console.info("[HeroCanvas] saveData on — poster");
-    if (!webglOK) console.info("[HeroCanvas] WebGL unavailable — poster");
+    const compute = (): Mode => {
+      if (!mql.matches) {
+        console.info("[HeroCanvas] viewport <768px — static poster");
+        return "poster";
+      }
+      if (saveData) {
+        console.info("[HeroCanvas] saveData on — static poster");
+        return "poster";
+      }
+      if (!detectWebGL()) {
+        // WebGL unavailable (GPU blocklisted, hardware-accel off, etc.).
+        // This is a *failure*, not a preference, so we render the animated
+        // CSS blade so it still looks intentional rather than broken.
+        console.info("[HeroCanvas] WebGL unavailable — CSS blade fallback");
+        return "css-blade";
+      }
+      return "r3f";
+    };
 
-    const compute = () =>
-      mql.matches && !saveData && webglOK;
-    setEnabled(compute());
-    const onChange = () => setEnabled(compute());
+    setMode(compute());
+    const onChange = () => setMode(compute());
     mql.addEventListener("change", onChange);
     return () => mql.removeEventListener("change", onChange);
   }, [reduce]);
 
-  if (!enabled) {
-    return <PosterFallback />;
-  }
+  if (mode === "loading" || mode === "poster") return <PosterFallback />;
+  if (mode === "css-blade") return <CssBladeFallback />;
 
   return (
-    <WebGLErrorBoundary fallback={<PosterFallback />}>
+    // R3F throwing mid-runtime (shader compile fail, NaN math, driver crash)
+    // also falls back to the CSS blade — same "WebGL effectively broken"
+    // class of failure as detectWebGL() returning false.
+    <WebGLErrorBoundary fallback={<CssBladeFallback />}>
       <Canvas
         dpr={[1, 1.5]}
         frameloop="always"
         // Dropped `powerPreference: "high-performance"` — on
         // integrated-GPU-only laptops it can force a request for a discrete
         // GPU that doesn't exist or is asleep, failing context creation.
-        // The browser default (`"default"`) lets the OS pick whatever GPU
-        // is actually available, which is what we want for max compatibility.
         gl={{ antialias: true, alpha: true }}
         camera={{ position: [0, 0, 4.2], fov: 42 }}
         className="absolute inset-0"
