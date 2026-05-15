@@ -32,7 +32,7 @@ Commercial + transactional. Searcher wants a Spring-based vendor. Being physical
 ## Page structure
 - **Slug:** `app/service-area/spring-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in Spring, TX | Saw Service 3G` (47)
-- **Meta description (140–160):** `Spring, TX-based industrial band saw repair — on-site service for Hyd-Mech and all major brands. 3rd-generation, 25 yrs. Call (281) 704-5589.` (143)
+- **Meta description (140–160):** `Spring, TX-based industrial band saw repair — on-site service for Hyd-Mech and all major brands. 3rd-generation, 25 yrs. Call (281) 801-5612.` (143)
 - **H1:** `Industrial Band Saw Repair — Spring, Texas (Our Home City)`
 - **Outline (H2s):**
   1. Our Shop is in Spring, TX (unique to this page — home-city anchor)

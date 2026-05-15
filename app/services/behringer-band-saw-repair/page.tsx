@@ -151,7 +151,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, Behringer model (HBP, HBE, HBM, LPS, or HCS), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 801-5612. We listen for symptoms, Behringer model (HBP, HBE, HBM, LPS, or HCS), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -198,7 +198,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Behringer models do you repair?",
-    a: "HBP-310, HBP-410, HBP-420, and HBP-530A horizontal production saws; HBE-261A and HBE-320 manual/semi-automatic; HBM mitre saws; LPS fully automatic lines; HCS carbide circular cold saws; and legacy Behringer equipment. Call (281) 704-5589 with model and serial.",
+    a: "HBP-310, HBP-410, HBP-420, and HBP-530A horizontal production saws; HBE-261A and HBE-320 manual/semi-automatic; HBM mitre saws; LPS fully automatic lines; HCS carbide circular cold saws; and legacy Behringer equipment. Call (281) 801-5612 with model and serial.",
   },
   {
     q: "Where are Behringer saws made?",

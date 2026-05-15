@@ -132,7 +132,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, HE&M model (H, V, Saber, NG, or DC), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 801-5612. We listen for symptoms, HE&M model (H, V, Saber, NG, or DC), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -179,7 +179,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which HEM models do you repair?",
-    a: "H-Series H90A / H105A / H130A horizontal pivots; V-Series V100LA-3 / V125LM / V140LA verticals; Saber 360 and Saber 600 mitre saws; NG120XL and NG160 production lines; DC dual-column machines; and legacy HE&M equipment. Call (281) 704-5589 with model and serial if your unit isn't listed.",
+    a: "H-Series H90A / H105A / H130A horizontal pivots; V-Series V100LA-3 / V125LM / V140LA verticals; Saber 360 and Saber 600 mitre saws; NG120XL and NG160 production lines; DC dual-column machines; and legacy HE&M equipment. Call (281) 801-5612 with model and serial if your unit isn't listed.",
   },
   {
     q: "Where are HEM saws made?",

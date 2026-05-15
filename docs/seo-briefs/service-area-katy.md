@@ -30,7 +30,7 @@ Commercial. Same vendor-shopping pattern as Houston. Local pack dominant.
 ## Page structure
 - **Slug:** `app/service-area/katy-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in Katy, TX | Saw Service 3G` (45)
-- **Meta description:** `Mobile industrial band saw repair across Katy, TX — Grand Pkwy machine shops, fab, oilfield services. Authorized Hyd-Mech dealer. (281) 704-5589.` (148)
+- **Meta description:** `Mobile industrial band saw repair across Katy, TX — Grand Pkwy machine shops, fab, oilfield services. Authorized Hyd-Mech dealer. (281) 801-5612.` (148)
 - **H1:** `Industrial Band Saw Repair — Katy, Texas`
 - **Outline (H2s):**
   1. Local Service from Spring, TX — Reaching Katy

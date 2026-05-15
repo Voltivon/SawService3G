@@ -92,7 +92,7 @@
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
 - "Other services" → `/#services`
-- Phone link `tel:+12817045589`
+- Phone link `tel:+12818015612`
 
 ## Open Graph / Twitter
 - **og:title:** `Hyd-Mech Band Saw Repair Houston | Authorized Dealer` (52)

@@ -27,7 +27,7 @@ export const faq: FaqItem[] = [
   },
   {
     q: "Can you handle emergency or urgent breakdowns?",
-    a: "Yes. Most emergency calls get a tech on-site within 72 hours, often sooner for Greater Houston customers we already work with. Call (281) 704-5589 — the faster we know, the faster we roll. Time-and-a-half applies for evening and weekend hours.",
+    a: "Yes. Most emergency calls get a tech on-site within 72 hours, often sooner for Greater Houston customers we already work with. Call (281) 801-5612 — the faster we know, the faster we roll. Time-and-a-half applies for evening and weekend hours.",
   },
   {
     q: "How do you price band saw repair?",

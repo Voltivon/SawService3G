@@ -95,7 +95,7 @@ Source: `serp_organic_live_advanced` keyword=`amada band saw repair`, location=H
 - "Hyd-Mech band saw repair" → `/services/hyd-mech-band-saw-repair`
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
-- Phone link `tel:+12817045589`
+- Phone link `tel:+12818015612`
 
 ## Open Graph / Twitter
 - **og:title:** `Amada Band Saw Repair Houston | HFA, HA & PCSAW` (49)

@@ -144,7 +144,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, Tsune model (FA, FMB, MCS, or NHC), and urgency &mdash; and tell you straight if it's a field fix.",
+      "Call (281) 801-5612. We listen for symptoms, Tsune model (FA, FMB, MCS, or NHC), and urgency &mdash; and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -195,7 +195,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Tsune models do you repair?",
-    a: "FA-250, FA-300A, and FA-500A carbide circular cold saws; FMB band saws; MCS and NHC fully-automatic systems; and legacy Tsune machinery. Call (281) 704-5589 with model and serial if your unit isn't listed.",
+    a: "FA-250, FA-300A, and FA-500A carbide circular cold saws; FMB band saws; MCS and NHC fully-automatic systems; and legacy Tsune machinery. Call (281) 801-5612 with model and serial if your unit isn't listed.",
   },
   {
     q: "Can you service older Tsune machines?",

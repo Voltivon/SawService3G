@@ -135,7 +135,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, Marvel model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
+      "Call (281) 801-5612. We listen for symptoms, Marvel model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
   },
   {
     step: "02",
@@ -182,7 +182,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Marvel models do you repair?",
-    a: "Series 8 Mark II, III, and IV; Series 81; Series 15A9; Premium 15A; Spartan; and legacy Marvel verticals. If your model isn't listed, call (281) 704-5589 with model and serial — we have almost certainly worked on it.",
+    a: "Series 8 Mark II, III, and IV; Series 81; Series 15A9; Premium 15A; Spartan; and legacy Marvel verticals. If your model isn't listed, call (281) 801-5612 with model and serial — we have almost certainly worked on it.",
   },
   {
     q: "Why is my Marvel feed worm gear failing?",

@@ -127,7 +127,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, Amada model (HFA, HA, or PCSAW), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 801-5612. We listen for symptoms, Amada model (HFA, HA, or PCSAW), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",

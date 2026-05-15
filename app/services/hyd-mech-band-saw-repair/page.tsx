@@ -122,7 +122,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 704-5589. We listen for symptoms, model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
+      "Call (281) 801-5612. We listen for symptoms, model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
   },
   {
     step: "02",
@@ -169,7 +169,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Hyd-Mech models do you repair?",
-    a: "The full industrial range: S-20, S-20A, S-23A, DM-10, DM-12, V-18, V-25, M-16A, M-20A, H-14A, H-18A, H-22A, and H-26/44. Older or unlisted Hyd-Mech models too — call (281) 704-5589 with your model and serial and we'll confirm.",
+    a: "The full industrial range: S-20, S-20A, S-23A, DM-10, DM-12, V-18, V-25, M-16A, M-20A, H-14A, H-18A, H-22A, and H-26/44. Older or unlisted Hyd-Mech models too — call (281) 801-5612 with your model and serial and we'll confirm.",
   },
   {
     q: "Why is my Hyd-Mech band saw not cutting straight?",

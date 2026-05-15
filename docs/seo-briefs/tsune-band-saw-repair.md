@@ -94,7 +94,7 @@ Source: `serp_organic_live_advanced` keyword=`tsune band saw repair`, location=H
 - "Behringer band saw repair" → `/services/behringer-band-saw-repair` (sibling — both German/Japanese high-precision platforms)
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
-- Phone link `tel:+12817045589`
+- Phone link `tel:+12818015612`
 
 ## Open Graph / Twitter
 - **og:title:** `Tsune Saw Repair Houston | Carbide & Band Saws` (47)
