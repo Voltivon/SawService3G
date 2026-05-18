@@ -38,6 +38,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route("/services/amada-band-saw-repair", 0.85),
     route("/services/marvel-band-saw-repair", 0.85),
     route("/services/behringer-band-saw-repair", 0.85),
+    // Service-type page (cross-brand) — 720/mo cluster, transactional
+    route("/services/band-saw-blade-welding", 0.85),
     route("/services/tsune-band-saw-repair", 0.8),
 
     // Service-area / location pages
