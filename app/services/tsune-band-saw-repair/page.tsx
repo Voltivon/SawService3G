@@ -20,6 +20,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
+import { FailureModesByModel } from "@/components/seo/failure-modes-by-model";
 import { safeJsonLd } from "@/lib/jsonld";
 
 const ROUTE = "/services/tsune-band-saw-repair";
@@ -144,7 +146,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 801-5612. We listen for symptoms, Tsune model (FA, FMB, MCS, or NHC), and urgency &mdash; and tell you straight if it's a field fix.",
+      "Call (281) 704-5589. We listen for symptoms, Tsune model (FA, FMB, MCS, or NHC), and urgency &mdash; and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -195,7 +197,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Tsune models do you repair?",
-    a: "FA-250, FA-300A, and FA-500A carbide circular cold saws; FMB band saws; MCS and NHC fully-automatic systems; and legacy Tsune machinery. Call (281) 801-5612 with model and serial if your unit isn't listed.",
+    a: "FA-250, FA-300A, and FA-500A carbide circular cold saws; FMB band saws; MCS and NHC fully-automatic systems; and legacy Tsune machinery. Call (281) 704-5589 with model and serial if your unit isn't listed.",
   },
   {
     q: "Can you service older Tsune machines?",
@@ -382,6 +384,38 @@ export default function TsuneSawRepairPage() {
                   experience on the FA-series and FMB platforms. Mobile,
                   on your floor, verified test cut before sign-off.
                 </p>
+                <p>
+                  The FA-series cuts we touch most often live in{" "}
+                  <Link
+                    href="/service-area/houston-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Houston
+                  </Link>
+                  &rsquo;s automotive-component shops, the energy machine
+                  shops out along Grand Pkwy in{" "}
+                  <Link
+                    href="/service-area/katy-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Katy
+                  </Link>
+                  , and the modular-fab pockets up around{" "}
+                  <Link
+                    href="/service-area/the-woodlands-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    The Woodlands
+                  </Link>
+                  . If an FMB band gives up mid-job we can also{" "}
+                  <Link
+                    href="/services/band-saw-blade-welding"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    weld a replacement blade
+                  </Link>{" "}
+                  on the truck the same visit.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -471,6 +505,20 @@ export default function TsuneSawRepairPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 city cards linking to each service-area page */}
+        <BrandCityMatrix
+          mode="cities-for-brand"
+          brandSlug="tsune"
+          brandLabel="Tsune"
+        />
+
+        {/* Failure modes by model — structured per-series symptom catalog */}
+        <FailureModesByModel
+          brandSlug="tsune"
+          heading="Common Tsune failure modes we see in the field"
+          lede="Tsune FA-Series carbide circulars, FMB band saws, MCS / NHC fully-automatic systems, and legacy Tsune machinery. These are the issues we diagnose most often, organized by series."
+        />
 
         {/* H2 #4 — Common issues */}
         <section

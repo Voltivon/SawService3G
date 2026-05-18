@@ -19,6 +19,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
+import { FailureModesByModel } from "@/components/seo/failure-modes-by-model";
 import { safeJsonLd } from "@/lib/jsonld";
 
 const ROUTE = "/services/amada-band-saw-repair";
@@ -127,7 +129,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 801-5612. We listen for symptoms, Amada model (HFA, HA, or PCSAW), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 704-5589. We listen for symptoms, Amada model (HFA, HA, or PCSAW), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -360,6 +362,38 @@ export default function AmadaBandSawRepairPage() {
                   and verify on a real test cut before we leave &mdash; and
                   the invoice waits until you have a saw cutting square.
                 </p>
+                <p>
+                  Most of the Amada HFAs we touch are running in{" "}
+                  <Link
+                    href="/service-area/houston-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Houston
+                  </Link>
+                  &rsquo;s steel-service and structural-fab corridor, out in{" "}
+                  <Link
+                    href="/service-area/cypress-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Cypress
+                  </Link>{" "}
+                  along Hwy 290, and around our home shop in{" "}
+                  <Link
+                    href="/service-area/spring-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Spring
+                  </Link>
+                  &rsquo;s FM 1960 / FM 2920 light-fab pocket. If a blade
+                  fails mid-job we can also{" "}
+                  <Link
+                    href="/services/band-saw-blade-welding"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    weld a replacement blade
+                  </Link>{" "}
+                  on the truck the same visit.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -449,6 +483,20 @@ export default function AmadaBandSawRepairPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 city cards linking to each service-area page */}
+        <BrandCityMatrix
+          mode="cities-for-brand"
+          brandSlug="amada"
+          brandLabel="Amada"
+        />
+
+        {/* Failure modes by model — structured per-series symptom catalog */}
+        <FailureModesByModel
+          brandSlug="amada"
+          heading="Common Amada failure modes we see in the field"
+          lede="HFA-Series automatics, HA-Series semi-automatics, PCSAW carbide cold-saw lines, and legacy Amada units. These are the symptoms our crew diagnoses most often, organized by series."
+        />
 
         {/* H2 #4 — Common issues */}
         <section

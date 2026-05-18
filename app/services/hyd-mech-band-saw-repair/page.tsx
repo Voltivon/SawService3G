@@ -20,6 +20,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
+import { FailureModesByModel } from "@/components/seo/failure-modes-by-model";
 import { safeJsonLd } from "@/lib/jsonld";
 
 const ROUTE = "/services/hyd-mech-band-saw-repair";
@@ -122,7 +124,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 801-5612. We listen for symptoms, model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
+      "Call (281) 704-5589. We listen for symptoms, model, and urgency — and tell you straight if it's a field fix or a factory-line problem.",
   },
   {
     step: "02",
@@ -169,7 +171,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Hyd-Mech models do you repair?",
-    a: "The full industrial range: S-20, S-20A, S-23A, DM-10, DM-12, V-18, V-25, M-16A, M-20A, H-14A, H-18A, H-22A, and H-26/44. Older or unlisted Hyd-Mech models too — call (281) 801-5612 with your model and serial and we'll confirm.",
+    a: "The full industrial range: S-20, S-20A, S-23A, DM-10, DM-12, V-18, V-25, M-16A, M-20A, H-14A, H-18A, H-22A, and H-26/44. Older or unlisted Hyd-Mech models too — call (281) 704-5589 with your model and serial and we'll confirm.",
   },
   {
     q: "Why is my Hyd-Mech band saw not cutting straight?",
@@ -366,6 +368,39 @@ export default function HydMechBandSawRepairPage() {
                   paperwork; experience is what gets the saw cutting square
                   before you reload.
                 </p>
+                <p>
+                  Most of our Hyd-Mech work happens out in{" "}
+                  <Link
+                    href="/service-area/houston-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Houston
+                  </Link>
+                  ,{" "}
+                  <Link
+                    href="/service-area/katy-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Katy
+                  </Link>
+                  , and{" "}
+                  <Link
+                    href="/service-area/cypress-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Cypress
+                  </Link>{" "}
+                  &mdash; three corridors with dense fabrication and
+                  machine-shop activity. If a blade gives up mid-job, we can
+                  also{" "}
+                  <Link
+                    href="/services/band-saw-blade-welding"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    weld a replacement blade
+                  </Link>{" "}
+                  on the truck and have you cutting again the same visit.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -479,6 +514,20 @@ export default function HydMechBandSawRepairPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 city cards linking to each service-area page */}
+        <BrandCityMatrix
+          mode="cities-for-brand"
+          brandSlug="hyd-mech"
+          brandLabel="Hyd-Mech"
+        />
+
+        {/* Failure modes by model — structured per-series symptom catalog */}
+        <FailureModesByModel
+          brandSlug="hyd-mech"
+          heading="Common Hyd-Mech failure modes we see in the field"
+          lede="Twenty-five years of authorized-dealer service on the Hyd-Mech line — these are the issues we diagnose most often, grouped by model series. Symptoms are operator-facing; common causes are what we look at first."
+        />
 
         {/* H2 #4 — Process */}
         <section
@@ -604,6 +653,25 @@ export default function HydMechBandSawRepairPage() {
                 </Reveal>
               ))}
             </div>
+            <Reveal delay={0.2}>
+              <p className="mt-10 max-w-2xl text-sm text-ink-400">
+                Mixed fleet? We also service{" "}
+                <Link
+                  href="/services/hem-saw-repair"
+                  className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                >
+                  HEM saws
+                </Link>
+                {" "}and{" "}
+                <Link
+                  href="/services/marvel-band-saw-repair"
+                  className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                >
+                  Marvel band saws
+                </Link>
+                {" "}on the same visit &mdash; same crew, same truck.
+              </p>
+            </Reveal>
           </div>
         </section>
 

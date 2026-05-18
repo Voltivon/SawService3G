@@ -21,6 +21,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
+import { FailureModesByModel } from "@/components/seo/failure-modes-by-model";
 import { safeJsonLd } from "@/lib/jsonld";
 
 const ROUTE = "/services/behringer-band-saw-repair";
@@ -151,7 +153,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 801-5612. We listen for symptoms, Behringer model (HBP, HBE, HBM, LPS, or HCS), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 704-5589. We listen for symptoms, Behringer model (HBP, HBE, HBM, LPS, or HCS), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -198,7 +200,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which Behringer models do you repair?",
-    a: "HBP-310, HBP-410, HBP-420, and HBP-530A horizontal production saws; HBE-261A and HBE-320 manual/semi-automatic; HBM mitre saws; LPS fully automatic lines; HCS carbide circular cold saws; and legacy Behringer equipment. Call (281) 801-5612 with model and serial.",
+    a: "HBP-310, HBP-410, HBP-420, and HBP-530A horizontal production saws; HBE-261A and HBE-320 manual/semi-automatic; HBM mitre saws; LPS fully automatic lines; HCS carbide circular cold saws; and legacy Behringer equipment. Call (281) 704-5589 with model and serial.",
   },
   {
     q: "Where are Behringer saws made?",
@@ -396,6 +398,38 @@ export default function BehringerBandSawRepairPage() {
                   causes. Mobile, on your floor, verified test cut before
                   sign-off.
                 </p>
+                <p>
+                  The HBPs and HCS lines we touch most often live in{" "}
+                  <Link
+                    href="/service-area/houston-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Houston
+                  </Link>
+                  &rsquo;s precision-production shops, the Hwy 290
+                  steel-service corridor through{" "}
+                  <Link
+                    href="/service-area/cypress-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Cypress
+                  </Link>
+                  , and the energy-packaging shops along Grand Pkwy in{" "}
+                  <Link
+                    href="/service-area/katy-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Katy
+                  </Link>
+                  . If a blade fails mid-job we can also{" "}
+                  <Link
+                    href="/services/band-saw-blade-welding"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    weld a replacement blade
+                  </Link>{" "}
+                  on the truck the same visit.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -484,6 +518,20 @@ export default function BehringerBandSawRepairPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 city cards linking to each service-area page */}
+        <BrandCityMatrix
+          mode="cities-for-brand"
+          brandSlug="behringer"
+          brandLabel="Behringer"
+        />
+
+        {/* Failure modes by model — structured per-series symptom catalog */}
+        <FailureModesByModel
+          brandSlug="behringer"
+          heading="Common Behringer failure modes we see in the field"
+          lede="HBP production horizontals, HBE manual / semi-automatics, HBM mitres, LPS fully-automatic lines, HCS carbide circular cold saws. These are the issues we diagnose most often, grouped by series."
+        />
 
         {/* H2 #4 — Common issues */}
         <section

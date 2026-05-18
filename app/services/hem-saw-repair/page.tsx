@@ -20,6 +20,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
+import { FailureModesByModel } from "@/components/seo/failure-modes-by-model";
 import { safeJsonLd } from "@/lib/jsonld";
 
 const ROUTE = "/services/hem-saw-repair";
@@ -132,7 +134,7 @@ const processSteps: { step: string; title: string; body: string }[] = [
     step: "01",
     title: "Phone diagnosis",
     body:
-      "Call (281) 801-5612. We listen for symptoms, HE&M model (H, V, Saber, NG, or DC), and urgency — and tell you straight if it's a field fix.",
+      "Call (281) 704-5589. We listen for symptoms, HE&M model (H, V, Saber, NG, or DC), and urgency — and tell you straight if it's a field fix.",
   },
   {
     step: "02",
@@ -179,7 +181,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Which HEM models do you repair?",
-    a: "H-Series H90A / H105A / H130A horizontal pivots; V-Series V100LA-3 / V125LM / V140LA verticals; Saber 360 and Saber 600 mitre saws; NG120XL and NG160 production lines; DC dual-column machines; and legacy HE&M equipment. Call (281) 801-5612 with model and serial if your unit isn't listed.",
+    a: "H-Series H90A / H105A / H130A horizontal pivots; V-Series V100LA-3 / V125LM / V140LA verticals; Saber 360 and Saber 600 mitre saws; NG120XL and NG160 production lines; DC dual-column machines; and legacy HE&M equipment. Call (281) 704-5589 with model and serial if your unit isn't listed.",
   },
   {
     q: "Where are HEM saws made?",
@@ -369,6 +371,39 @@ export default function HemSawRepairPage() {
                   and verify on a real test cut before we leave &mdash; and
                   the invoice waits until you have a saw cutting square.
                 </p>
+                <p>
+                  HE&amp;M work tends to cluster where structural and tubular
+                  fab live &mdash;{" "}
+                  <Link
+                    href="/service-area/houston-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Houston
+                  </Link>
+                  &rsquo;s NW machine-shop corridor, the I-45N{" "}
+                  <Link
+                    href="/service-area/conroe-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Conroe
+                  </Link>
+                  -Willis oilfield tubular run, and the Grand Pkwy energy
+                  packaging shops out in{" "}
+                  <Link
+                    href="/service-area/katy-tx"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    Katy
+                  </Link>
+                  . If a blade snaps mid-job we can also{" "}
+                  <Link
+                    href="/services/band-saw-blade-welding"
+                    className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
+                  >
+                    weld a replacement blade
+                  </Link>{" "}
+                  on the truck the same visit.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -457,6 +492,20 @@ export default function HemSawRepairPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 city cards linking to each service-area page */}
+        <BrandCityMatrix
+          mode="cities-for-brand"
+          brandSlug="hem"
+          brandLabel="HEM"
+        />
+
+        {/* Failure modes by model — structured per-series symptom catalog */}
+        <FailureModesByModel
+          brandSlug="hem"
+          heading="Common HE&M failure modes we see in the field"
+          lede="HE&M horizontal pivots, V-Series verticals, Saber mitres, NG production lines, DC dual-columns. These are the issues we diagnose most often across the HE&M lineup, grouped by series."
+        />
 
         {/* H2 #4 — Common issues */}
         <section
