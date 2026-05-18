@@ -38,7 +38,7 @@
 ## Page structure
 - **Slug:** `app/service-area/cypress-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in Cypress, TX | Saw Service 3G` (48)
-- **Meta description:** `Mobile industrial band saw repair in Cypress, TX — service for all major brands. Authorized Hyd-Mech dealer. 25 yrs. Call (281) 801-5612.` (137)
+- **Meta description:** `Mobile industrial band saw repair in Cypress, TX — service for all major brands. Authorized Hyd-Mech dealer. 25 yrs. Call (281) 704-5589.` (137)
 - **H1:** `Industrial Band Saw Repair — Cypress, Texas`
 - **Outline (H2s):**
   1. Local Service from Spring, TX — Reaching Cypress

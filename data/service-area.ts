@@ -100,7 +100,7 @@ export const springConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in Spring, TX | Saw Service 3G",
     description:
-      "Spring, TX-based industrial band saw repair — on-site service for Hyd-Mech and all major brands. 3rd-generation, 25 yrs. Call (281) 801-5612.",
+      "Spring, TX-based industrial band saw repair — on-site service for Hyd-Mech and all major brands. 3rd-generation, 25 yrs. Call (281) 704-5589.",
     ogDescription:
       "Spring, TX-based industrial band saw repair. Authorized Hyd-Mech dealer. 3rd-generation, 25 years on Harris County saws.",
     twitterDescription:
@@ -137,7 +137,7 @@ export const houstonConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in Houston, TX | Saw Service 3G",
     description:
-      "Mobile industrial band saw repair across Houston, TX — anchoring, drive systems, hydraulics, PM. Authorized Hyd-Mech dealer. Call (281) 801-5612.",
+      "Mobile industrial band saw repair across Houston, TX — anchoring, drive systems, hydraulics, PM. Authorized Hyd-Mech dealer. Call (281) 704-5589.",
     ogDescription:
       "Mobile industrial band saw repair across Houston, TX. Authorized Hyd-Mech dealer. 3rd-generation Texas business based in Spring, TX.",
     twitterDescription:
@@ -174,7 +174,7 @@ export const katyConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in Katy, TX | Saw Service 3G",
     description:
-      "Mobile industrial band saw repair across Katy, TX — Grand Pkwy machine shops, fab, oilfield services. Authorized Hyd-Mech dealer. (281) 801-5612.",
+      "Mobile industrial band saw repair across Katy, TX — Grand Pkwy machine shops, fab, oilfield services. Authorized Hyd-Mech dealer. (281) 704-5589.",
     ogDescription:
       "Mobile industrial band saw repair across Katy, TX. Authorized Hyd-Mech dealer. 3rd-generation Texas business based in Spring, TX.",
     twitterDescription:
@@ -220,7 +220,7 @@ export const cypressConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in Cypress, TX | Saw Service 3G",
     description:
-      "Mobile industrial band saw repair in Cypress, TX — service for all major brands. Authorized Hyd-Mech dealer. 25 yrs. Call (281) 801-5612.",
+      "Mobile industrial band saw repair in Cypress, TX — service for all major brands. Authorized Hyd-Mech dealer. 25 yrs. Call (281) 704-5589.",
     ogDescription:
       "Mobile industrial band saw repair in Cypress, TX. Authorized Hyd-Mech dealer; we also service JLH, DoAll, Marvel, Wells, HE&M, and Kalamazoo saws.",
     twitterDescription:
@@ -259,7 +259,7 @@ export const theWoodlandsConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in The Woodlands, TX | Saw Service 3G",
     description:
-      "Mobile industrial band saw repair in The Woodlands, TX — service for energy-sector machine shops & fab. Authorized Hyd-Mech dealer. (281) 801-5612.",
+      "Mobile industrial band saw repair in The Woodlands, TX — service for energy-sector machine shops & fab. Authorized Hyd-Mech dealer. (281) 704-5589.",
     ogDescription:
       "Mobile industrial band saw repair in The Woodlands, TX. Authorized Hyd-Mech dealer. ~15–25 min from our Spring shop.",
     twitterDescription:
@@ -296,7 +296,7 @@ export const conroeConfig: CityConfig = {
   meta: {
     title: "Band Saw Repair in Conroe, TX | Saw Service 3G",
     description:
-      "Mobile industrial band saw repair in Conroe, TX — oilfield-services tubular, fab shops, machine shops. Authorized Hyd-Mech dealer. (281) 801-5612.",
+      "Mobile industrial band saw repair in Conroe, TX — oilfield-services tubular, fab shops, machine shops. Authorized Hyd-Mech dealer. (281) 704-5589.",
     ogDescription:
       "Mobile industrial band saw repair in Conroe, TX. Authorized Hyd-Mech dealer. Conroe-Willis tubular and energy-fab corridor.",
     twitterDescription:

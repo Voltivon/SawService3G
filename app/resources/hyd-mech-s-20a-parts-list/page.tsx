@@ -138,7 +138,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Where can I get OEM Hyd-Mech S-20A parts in Texas?",
-    a: "Through us. Saw Service 3G is an authorized Hyd-Mech dealer in Texas; we source OEM S-20A parts directly through Hyd-Mech as part of a service job. We don't run a retail parts counter, but if you need a specific component for a self-service repair we can serial-match it and quote it. Call (281) 801-5612.",
+    a: "Through us. Saw Service 3G is an authorized Hyd-Mech dealer in Texas; we source OEM S-20A parts directly through Hyd-Mech as part of a service job. We don't run a retail parts counter, but if you need a specific component for a self-service repair we can serial-match it and quote it. Call (281) 704-5589.",
   },
 ];
 

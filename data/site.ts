@@ -4,8 +4,8 @@ export const site = {
   description:
     "25 years of mobile, on-site industrial band saw repair, anchoring, relocation, and preventive maintenance across the Greater Houston Area and surrounding states. Third-generation family-owned. Authorized Hyd-Mech dealer.",
   phone: {
-    display: "(281) 801-5612",
-    href: "tel:+12818015612",
+    display: "(281) 704-5589",
+    href: "tel:+12817045589",
   },
   email: {
     display: "kaylensaws@yahoo.com",
@@ -15,8 +15,8 @@ export const site = {
     {
       name: "Kaylen",
       role: "Owner — 3rd Generation",
-      phoneDisplay: "(281) 801-5612",
-      phoneHref: "tel:+12818015612",
+      phoneDisplay: "(281) 704-5589",
+      phoneHref: "tel:+12817045589",
       emailDisplay: "kaylensaws@yahoo.com",
       emailHref: "mailto:kaylensaws@yahoo.com",
     },

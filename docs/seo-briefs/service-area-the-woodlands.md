@@ -32,7 +32,7 @@ Commercial + transactional. Local pack includes Conroe/Tomball businesses (not W
 ## Page structure
 - **Slug:** `app/service-area/the-woodlands-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in The Woodlands, TX | Saw Service 3G` (54)
-- **Meta description:** `Mobile industrial band saw repair in The Woodlands, TX — service for energy-sector machine shops & fab. Authorized Hyd-Mech dealer. (281) 801-5612.` (149)
+- **Meta description:** `Mobile industrial band saw repair in The Woodlands, TX — service for energy-sector machine shops & fab. Authorized Hyd-Mech dealer. (281) 704-5589.` (149)
 - **H1:** `Industrial Band Saw Repair — The Woodlands, Texas`
 - **Outline (H2s):**
   1. Local Service from Spring, TX — Reaching The Woodlands

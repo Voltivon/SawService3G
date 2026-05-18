@@ -25,7 +25,7 @@ import { safeJsonLd } from "@/lib/jsonld";
 const ROUTE = "/services/band-saw-blade-welding";
 const TITLE_TAG = "Band Saw Blade Welding in Houston | Saw Service 3G";
 const META_DESC =
-  "In-shop band saw blade welding across Greater Houston. Weld-to-length, annealed and ground. Bi-metal, carbon, carbide-tipped. Call (281) 801-5612.";
+  "In-shop band saw blade welding across Greater Houston. Weld-to-length, annealed and ground. Bi-metal, carbon, carbide-tipped. Call (281) 704-5589.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE_TAG },
@@ -168,7 +168,7 @@ const faqItems: { q: string; a: string }[] = [
   },
   {
     q: "Can you weld a band saw blade for me near Houston or Katy?",
-    a: "Yes. The welder lives in our Spring TX shop just north of Houston. Drop off your blade or schedule a pickup as part of a service call across Greater Houston — Houston, Katy, Cypress, Conroe, Spring, The Woodlands. Call (281) 801-5612 to set it up.",
+    a: "Yes. The welder lives in our Spring TX shop just north of Houston. Drop off your blade or schedule a pickup as part of a service call across Greater Houston — Houston, Katy, Cypress, Conroe, Spring, The Woodlands. Call (281) 704-5589 to set it up.",
   },
 ];
 

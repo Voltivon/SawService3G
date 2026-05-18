@@ -92,7 +92,7 @@ Source: `serp_organic_live_advanced` keyword=`behringer band saw repair`, locati
 - "HEM saw repair" → `/services/hem-saw-repair`
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
-- Phone link `tel:+12818015612`
+- Phone link `tel:+12817045589`
 
 ## Open Graph / Twitter
 - **og:title:** `Behringer Band Saw Repair Houston | HBP, HBE, HCS` (50)

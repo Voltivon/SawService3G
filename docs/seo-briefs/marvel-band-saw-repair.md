@@ -95,7 +95,7 @@ Source: `serp_organic_live_advanced` keyword=`marvel band saw repair`, location=
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
 - "Other brands we service" → `/#services` (or future `/brands`)
-- Phone link `tel:+12818015612`
+- Phone link `tel:+12817045589`
 
 ## Open Graph / Twitter
 - **og:title:** `Marvel Band Saw Repair Houston | Every Series, On-Site` (55)

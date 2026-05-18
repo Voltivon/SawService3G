@@ -32,7 +32,7 @@ Commercial + navigational. Conroe SERP heavily filled with Conroe-area small-eng
 ## Page structure
 - **Slug:** `app/service-area/conroe-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in Conroe, TX | Saw Service 3G` (47)
-- **Meta description:** `Mobile industrial band saw repair in Conroe, TX — oilfield-services tubular, fab shops, machine shops. Authorized Hyd-Mech dealer. (281) 801-5612.` (147)
+- **Meta description:** `Mobile industrial band saw repair in Conroe, TX — oilfield-services tubular, fab shops, machine shops. Authorized Hyd-Mech dealer. (281) 704-5589.` (147)
 - **H1:** `Industrial Band Saw Repair — Conroe, Texas`
 - **Outline (H2s):**
   1. Local Service from Spring, TX — Reaching Conroe

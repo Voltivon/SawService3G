@@ -88,7 +88,7 @@
 - "Authorized Hyd-Mech Dealer" → `/brands/hyd-mech` (Brief 2) — anchored in intro
 - "Request a quote" → `/#quote`
 - "Service area" → `/#coverage`
-- Phone link `tel:+12818015612`
+- Phone link `tel:+12817045589`
 
 ## Open Graph / Twitter
 - **og:title:** `Hyd-Mech S-20A Parts & Service Reference | Saw Service 3G` (57)

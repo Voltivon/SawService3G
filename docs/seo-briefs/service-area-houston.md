@@ -35,7 +35,7 @@
 ## Page structure
 - **Slug:** `app/service-area/houston-tx/page.tsx`
 - **Title (≤60):** `Band Saw Repair in Houston, TX | Saw Service 3G` (49)
-- **Meta description (140–160):** `Mobile industrial band saw repair across Houston, TX — anchoring, drive systems, hydraulics, PM. Authorized Hyd-Mech dealer. Call (281) 801-5612.` (149)
+- **Meta description (140–160):** `Mobile industrial band saw repair across Houston, TX — anchoring, drive systems, hydraulics, PM. Authorized Hyd-Mech dealer. Call (281) 704-5589.` (149)
 - **H1:** `Industrial Band Saw Repair — Houston, Texas`
 - **Outline (H2s):**
   1. Local Service from Spring, TX — Reaching Houston
@@ -64,7 +64,7 @@
 - `/#quote`
 - `/#coverage`
 - Cross-link footer to the other 5 service-area pages
-- `tel:+12818015612`
+- `tel:+12817045589`
 
 ## Open Graph / Twitter
 - **og:title:** `Band Saw Repair in Houston, TX | Saw Service 3G` (49)

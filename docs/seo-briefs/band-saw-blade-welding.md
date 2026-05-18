@@ -115,9 +115,9 @@ Source: `serp_organic_live_advanced` keyword=`band saw blade welding`, location=
   3. `Bandsaw Blade Welding Houston · Weld-to-Length` (46)
 
 - **`<meta name="description">` (140–160 chars):**
-  1. **`In-shop band saw blade welding across Greater Houston. Weld-to-length, annealed and ground. Bi-metal, carbon, carbide-tipped. Call (281) 801-5612.`** (148 chars) — **recommended**
-  2. `Houston band saw blade welding by Saw Service 3G. Weld-to-length blades for industrial saws — bi-metal, carbon, carbide. Quote at (281) 801-5612.` (145)
-  3. `Custom-welded band saw blades from a Spring TX shop. Flash-butt welding, annealed and ground. All major blade brands. Call (281) 801-5612.` (140)
+  1. **`In-shop band saw blade welding across Greater Houston. Weld-to-length, annealed and ground. Bi-metal, carbon, carbide-tipped. Call (281) 704-5589.`** (148 chars) — **recommended**
+  2. `Houston band saw blade welding by Saw Service 3G. Weld-to-length blades for industrial saws — bi-metal, carbon, carbide. Quote at (281) 704-5589.` (145)
+  3. `Custom-welded band saw blades from a Spring TX shop. Flash-butt welding, annealed and ground. All major blade brands. Call (281) 704-5589.` (140)
 
 - **`<h1>`:** `Band Saw Blade Welding in Houston — Weld-to-Length, Annealed and Ground`
 
@@ -151,7 +151,7 @@ Source: `serp_organic_live_advanced` keyword=`band saw blade welding`, location=
      A: Yes — we weld the carbon or bi-metal backing of carbide-tipped blades. The carbide teeth themselves are brazed to the backing by the blade manufacturer and aren't affected by joining the band into a loop. If the carbide teeth themselves are damaged, that's a re-tooth job rather than a weld — ask us and we'll tell you which one your blade needs. *(Sources `carbide band saw blade` 320/mo +50% qtr)*
 
   5. **Q: Can you weld a band saw blade for me near Houston or Katy?**
-     A: Yes. The welder lives in our Spring TX shop just north of Houston. Drop off your blade or schedule a pickup as part of a service call across Greater Houston — Houston, Katy, Cypress, Conroe, Spring, The Woodlands. Call **(281) 801-5612** to set it up. *(Sources `bandsaw blade welding near houston, tx`, `bandsaw blade welding near katy, tx`)*
+     A: Yes. The welder lives in our Spring TX shop just north of Houston. Drop off your blade or schedule a pickup as part of a service call across Greater Houston — Houston, Katy, Cypress, Conroe, Spring, The Woodlands. Call **(281) 704-5589** to set it up. *(Sources `bandsaw blade welding near houston, tx`, `bandsaw blade welding near katy, tx`)*
 
 - **Word count target:** **1,400–1,700 words.** Justification: median competitor (Groves, Metalsaw, Fastenal) sits around 600–900 words on the parent service page, but they don't dedicate the whole page to blade welding. We need depth to claim the topic, but not bloat. 1,400–1,700 keeps it scannable.
 
@@ -187,7 +187,7 @@ Reference: existing `<JsonLd>` component in `components/seo/` and helpers in `li
 | "Conroe" | `/service-area/conroe-tx` |
 | "Request a quote" (CTA blocks ×2) | `/#quote` |
 | "Contact us" (footer-area CTA) | `/#contact` |
-| `tel:+12818015612` (phone link, appears ≥3 times) | call action |
+| `tel:+12817045589` (phone link, appears ≥3 times) | call action |
 
 ## Open Graph / Twitter
 
