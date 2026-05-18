@@ -180,6 +180,20 @@ export const shopImages: ShopImage[] = [
       "webp",
       "avif"
     ]
+  },
+  {
+    "slug": "gulf-stream-container-inspection",
+    "alt": "Saw Service 3G — on-site shop work",
+    "category": "portrait",
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "formats": [
+      "webp",
+      "avif"
+    ]
   }
 ];
 
