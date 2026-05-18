@@ -21,6 +21,7 @@ import { Reveal } from "@/components/motion/reveal";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Breadcrumbs } from "@/components/sub-page/breadcrumbs";
 import { PageHero } from "@/components/sub-page/page-hero";
+import { BrandCityMatrix } from "@/components/seo/brand-city-matrix";
 import { safeJsonLd } from "@/lib/jsonld";
 import {
   type CityConfig,
@@ -523,6 +524,9 @@ export function LocationPage({ city }: { city: CityConfig }) {
             </div>
           </div>
         </section>
+
+        {/* Brand × city matrix — 6 brand cards linking to each brand service page */}
+        <BrandCityMatrix mode="brands-in-city" city={city} />
 
         {/* H2 #5 (satellite) / #6 (home) — FAQ */}
         <section

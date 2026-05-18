@@ -43,3 +43,4 @@ OWNER_INTAKE.md
 
 # MCP server config — may contain API credentials
 .mcp.json
+build-output.log
