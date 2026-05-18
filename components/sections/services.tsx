@@ -19,7 +19,7 @@ export function Services() {
               <br className="hidden sm:inline" /> not the other way around.
             </>
           }
-          lede="Mobile, on-site work across the saw's full lifecycle — from anchoring and relocation to emergency repair, billed only after the job is verified done."
+          lede="Mobile, on-site work across the saw's full lifecycle — from anchoring to preventive maintenance to emergency repair, billed only after the job is verified done."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-6">

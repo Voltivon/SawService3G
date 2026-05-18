@@ -313,7 +313,7 @@ export default function AmadaBandSawRepairPage() {
             href="/#quote"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
           >
-            Request a Quote
+            Contact Us
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
         </PageHero>
@@ -741,7 +741,7 @@ export default function AmadaBandSawRepairPage() {
                 id="cta-heading"
                 className="h-display mt-4 text-3xl text-white sm:text-4xl md:text-5xl"
               >
-                Get an estimate &mdash; call or request a quote.
+                Get an estimate. Call us anytime.
               </h2>
               <p className="mt-5 max-w-xl text-lg text-ink-300">
                 Phone is fastest. Tell us the Amada model, what the saw is
@@ -764,7 +764,7 @@ export default function AmadaBandSawRepairPage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
-                  Request a Quote
+                  Contact Us
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>

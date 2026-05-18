@@ -38,8 +38,8 @@ export const faq: FaqItem[] = [
     a: "Net 30 with ACH or check. We don't currently accept credit cards. W-9 available on request.",
   },
   {
-    q: "Do you handle anchoring and relocations, or just repair?",
-    a: "All of it. We anchor band saws, disassemble and relocate machines between sites or plants, and handle every step of mechanical, hydraulic, and electrical work in between. We don't sell or install new saws (Hyd-Mech excepted, as authorized dealer) — we set yours up to run, keep it running, and move it when you need to.",
+    q: "Do you handle anchoring, or just repair?",
+    a: "Both. We anchor band saws — set, level, align, and power up so the machine runs true and stays true — and handle every step of mechanical, hydraulic, and electrical work in between. We don't move saws between sites (that's specialized millwright/rigging work) and we don't sell or install new saws, with Hyd-Mech excepted as authorized dealer.",
   },
   {
     q: "Can you fix blade tracking, drive system, and hydraulic issues on-site?",

@@ -273,7 +273,7 @@ export function LocationPage({ city }: { city: CityConfig }) {
             href="/#quote"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
           >
-            Request a Quote
+            Contact Us
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
         </PageHero>
@@ -637,7 +637,7 @@ export function LocationPage({ city }: { city: CityConfig }) {
                 {city.isHomeCity ? (
                   <>Call us — we&rsquo;re minutes away.</>
                 ) : (
-                  <>Get a quote for {city.city}.</>
+                  <>Contact us for {city.city}.</>
                 )}
               </h2>
               <p className="mt-5 max-w-xl text-lg text-ink-300">
@@ -661,7 +661,7 @@ export function LocationPage({ city }: { city: CityConfig }) {
                   href="/#quote"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
-                  Request a Quote
+                  Contact Us
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>

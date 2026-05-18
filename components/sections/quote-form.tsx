@@ -61,7 +61,7 @@ export function QuoteForm() {
     >
       <div className="container-x grid gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="eyebrow">Get a quote</p>
+          <p className="eyebrow">Contact us</p>
           <h2
             id="quote-heading"
             className="h-display mt-4 text-4xl text-white sm:text-5xl md:text-6xl"

@@ -84,20 +84,6 @@ export const shopImages: ShopImage[] = [
     ]
   },
   {
-    "slug": "screenshot-2026-05-03-22-13-22-22-965bbf4d18d205f782c6b8409c5773a4",
-    "alt": "Saw Service 3G — on-site shop work",
-    "category": "wide",
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "formats": [
-      "webp",
-      "avif"
-    ]
-  },
-  {
     "slug": "screenshot-2026-05-03-22-13-22-31-965bbf4d18d205f782c6b8409c5773a4",
     "alt": "Saw Service 3G — on-site shop work",
     "category": "wide",

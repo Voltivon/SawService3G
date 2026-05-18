@@ -86,17 +86,17 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease, delay: 0.15 }}
           >
-            Mobile industrial band saw repair, anchoring, relocation, and
-            preventive maintenance — for metal fabrication shops, machine shops,
-            and steel service centers across the Greater Houston Area and
-            surrounding states. Billed after the work is done right.
+            Mobile industrial band saw repair, anchoring, and preventive
+            maintenance — for metal fabrication shops, machine shops, and steel
+            service centers across the Greater Houston Area and surrounding
+            states. Billed after the work is done right.
           </motion.p>
         ) : (
           <p className="mt-7 max-w-xl text-lg text-ink-300 md:text-xl">
-            Mobile industrial band saw repair, anchoring, relocation, and
-            preventive maintenance — for metal fabrication shops, machine shops,
-            and steel service centers across the Greater Houston Area and
-            surrounding states. Billed after the work is done right.
+            Mobile industrial band saw repair, anchoring, and preventive
+            maintenance — for metal fabrication shops, machine shops, and steel
+            service centers across the Greater Houston Area and surrounding
+            states. Billed after the work is done right.
           </p>
         )}
 
@@ -143,7 +143,7 @@ function HeroCtas() {
         href="#quote"
         className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
       >
-        Get a Quote
+        Contact Us
         <ArrowRight className="h-4 w-4" aria-hidden />
       </a>
     </>

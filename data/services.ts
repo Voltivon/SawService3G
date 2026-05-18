@@ -1,6 +1,5 @@
 import {
   Anchor,
-  Truck,
   Wrench,
   ShieldCheck,
   Factory,
@@ -24,13 +23,6 @@ export const services: Service[] = [
       "Set, level, and anchor band saws to spec. Concrete prep, leveling, alignment, and power-up so the machine runs true and stays true.",
     Icon: Anchor,
     span: "wide",
-  },
-  {
-    slug: "relocate",
-    title: "Disassemble & Relocate",
-    blurb:
-      "Tear-down, transport, and re-anchor across plants or sites. Documented for warranty, calibrated on the other end.",
-    Icon: Truck,
   },
   {
     slug: "repair",

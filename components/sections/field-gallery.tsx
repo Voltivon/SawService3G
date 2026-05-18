@@ -38,10 +38,6 @@ const slides: Slide[] = [
     alt: "Marvel band saw wheel and pulley service during a Houston-area mobile repair call",
   },
   {
-    caption: "Drive box rebuild",
-    alt: "Industrial band saw drive box rebuild — mechanical and hydraulic repair · Saw Service 3G",
-  },
-  {
     caption: "Hardware swap",
     alt: "Worn hardware replacement on a metal-cutting band saw at a Houston steel service center",
   },

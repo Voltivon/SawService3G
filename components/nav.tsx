@@ -48,8 +48,8 @@ const servicesByType: Entry[] = [
   { href: "services", label: "On-Site Repair", hint: "Field calls · diagnosis" },
   {
     href: "services",
-    label: "Anchoring & Relocation",
-    hint: "Move, level, verify",
+    label: "Anchoring",
+    hint: "Set, level, verify",
   },
   {
     href: "services",

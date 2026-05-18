@@ -269,7 +269,7 @@ export default function HydMechS20AReferencePage() {
                 </span>{" "}
                 The information below uses generic component names rather
                 than OEM part numbers. For a specific part number against
-                your serial, call us or request a quote — we&rsquo;ll
+                your serial, call us anytime — we&rsquo;ll
                 serial-match it through Hyd-Mech.
               </p>
             </aside>
@@ -657,7 +657,7 @@ export default function HydMechS20AReferencePage() {
               </h2>
               <p className="mt-5 max-w-xl text-lg text-ink-300">
                 We&rsquo;re an authorized Hyd-Mech dealer based in Spring,
-                TX. Call us or request a quote — we&rsquo;ll get a tech to
+                TX. Call us anytime — we&rsquo;ll get a tech to
                 your floor, usually within 72 hours.
               </p>
             </Reveal>
@@ -683,7 +683,7 @@ export default function HydMechS20AReferencePage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
-                  Request a Quote
+                  Contact Us
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>

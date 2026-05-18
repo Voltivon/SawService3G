@@ -297,7 +297,7 @@ export default function BandSawBladeWeldingPage() {
             href="/#quote"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
           >
-            Request a Quote
+            Contact Us
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
         </PageHero>
@@ -363,7 +363,7 @@ export default function BandSawBladeWeldingPage() {
                     href="/#quote"
                     className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
                   >
-                    request a quote
+                    contact us
                   </Link>{" "}
                   with the blade length, width, and brand and we&rsquo;ll get
                   back to you the same day.
@@ -779,7 +779,7 @@ export default function BandSawBladeWeldingPage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
-                  Request a Quote
+                  Contact Us
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 <Link

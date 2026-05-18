@@ -61,7 +61,7 @@ export const failureModesByBrand: Record<string, ModelGroup[]> = {
             "Blade drifts to one side mid-cut and the finished face is no longer square to the vise.",
           commonCauses: [
             "Carbide guide inserts or roller bearings worn past spec on the guide arms.",
-            "Guide-arm geometry drifted from factory alignment after a heavy crash or relocation.",
+            "Guide-arm geometry drifted from factory alignment after a heavy crash.",
             "Hydraulic down-feed pressure running uneven and pushing the blade past its cut rate.",
           ],
           severity: "minor",
@@ -231,7 +231,7 @@ export const failureModesByBrand: Record<string, ModelGroup[]> = {
           symptom:
             "Head squareness has drifted and the finished face is out of tolerance on long structural cuts.",
           commonCauses: [
-            "Head-to-vise relationship shifted after a crash or relocation.",
+            "Head-to-vise relationship shifted after a heavy crash.",
             "Guide-arm geometry out of factory alignment.",
             "Pivot or rail wear on high-cycle H-Series production lines.",
           ],
@@ -380,7 +380,7 @@ export const failureModesByBrand: Record<string, ModelGroup[]> = {
           symptom:
             "Cut goes out of square on long structural pieces and downstream tolerances drift over a shift.",
           commonCauses: [
-            "Head-to-vise relationship shifted after a crash or relocation.",
+            "Head-to-vise relationship shifted after a heavy crash.",
             "Guide-arm geometry out of alignment.",
             "Blade tension drifted from spec on the tension gauge.",
           ],
@@ -635,7 +635,7 @@ export const failureModesByBrand: Record<string, ModelGroup[]> = {
           symptom:
             "Cut goes out of square on heavy structural sections on the HBP-530A and downstream tolerances drift.",
           commonCauses: [
-            "Head-to-vise relationship shifted after a crash or relocation.",
+            "Head-to-vise relationship shifted after a heavy crash.",
             "Guide-arm geometry out of factory alignment.",
             "Blade tension drifted from spec on the tension gauge.",
           ],

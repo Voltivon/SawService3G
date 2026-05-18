@@ -2,7 +2,7 @@ export const site = {
   name: "Saw Service 3G",
   tagline: "We come to you. Any saw. Any shop.",
   description:
-    "25 years of mobile, on-site industrial band saw repair, anchoring, relocation, and preventive maintenance across the Greater Houston Area and surrounding states. Third-generation family-owned. Authorized Hyd-Mech dealer.",
+    "25 years of mobile, on-site industrial band saw repair, anchoring, and preventive maintenance across the Greater Houston Area and surrounding states. Third-generation family-owned. Authorized Hyd-Mech dealer.",
   phone: {
     display: "(281) 704-5589",
     href: "tel:+12817045589",

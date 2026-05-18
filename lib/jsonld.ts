@@ -42,7 +42,6 @@ export function localBusinessJsonLd() {
       "industrial band saw repair",
       "metal band saw repair",
       "band saw anchoring",
-      "band saw relocation",
       "preventive maintenance",
       "metal fabrication saw service",
       "blade tracking",

@@ -479,7 +479,7 @@ export default function HydMechBrandPage() {
         >
           <div className="container-x">
             <Reveal className="max-w-3xl">
-              <p className="eyebrow">Get a quote</p>
+              <p className="eyebrow">Contact us</p>
               <h2
                 id="quote-cta-heading"
                 className="h-display mt-4 text-3xl text-white sm:text-4xl md:text-5xl"
@@ -506,7 +506,7 @@ export default function HydMechBrandPage() {
                   href="/#quote"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
-                  Request a Quote
+                  Contact Us
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>
