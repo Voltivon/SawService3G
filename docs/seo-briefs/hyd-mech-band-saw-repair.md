@@ -86,7 +86,7 @@
 - **Skip:** `Product` (this is a service, not a SKU)
 
 ## Internal links
-- "Get a quote" → `/#quote` (primary CTA)
+- "Contact us" → `/#contact` (primary CTA)
 - "Brands we service" → `/brands/hyd-mech` (Brief 2)
 - "Hyd-Mech S-20A Parts & Service Reference" → `/resources/hyd-mech-s-20a-parts-list` (Brief 3) — anchored on "S-20A" in Models We Service
 - "About Saw Service 3G" → `/#about`
@@ -105,7 +105,7 @@
 - First new page beyond `app/page.tsx`. Create `app/services/hyd-mech-band-saw-repair/page.tsx` directly.
 - Optional shared `app/services/layout.tsx` once Brief 2 + 3 land.
 - Extend global Nav to include new routes once they exist.
-- Reuse `QuoteForm` at bottom OR anchored CTA to `/#quote`.
+- Reuse `ContactSection` at bottom OR anchored CTA to `/#contact`.
 - Add route to `app/sitemap.ts`.
 - Confirm `metadataBase` resolves canonical URLs (apex vs www) per CLAUDE.md §10.
 - **Honesty constraint:** "Authorized Hyd-Mech Dealer" claim is the central E-E-A-T. Owner intake confirms it; verify wording before publish.

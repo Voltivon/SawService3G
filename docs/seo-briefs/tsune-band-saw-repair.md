@@ -89,7 +89,7 @@ Source: `serp_organic_live_advanced` keyword=`tsune band saw repair`, location=H
 - **Skip:** `Product`
 
 ## Internal links
-- "Get a quote" → `/#quote`
+- "Contact us" → `/#contact`
 - "Hyd-Mech band saw repair" → `/services/hyd-mech-band-saw-repair`
 - "Behringer band saw repair" → `/services/behringer-band-saw-repair` (sibling — both German/Japanese high-precision platforms)
 - "About Saw Service 3G" → `/#about`

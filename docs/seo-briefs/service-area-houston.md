@@ -61,7 +61,7 @@
 ## Internal links
 - `/services/hyd-mech-band-saw-repair`
 - `/brands/hyd-mech`
-- `/#quote`
+- `/#contact`
 - `/#coverage`
 - Cross-link footer to the other 5 service-area pages
 - `tel:+12817045589`

@@ -140,7 +140,7 @@ function HeroCtas() {
         </a>
       </Magnetic>
       <a
-        href="#quote"
+        href="#contact"
         className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
       >
         Contact Us

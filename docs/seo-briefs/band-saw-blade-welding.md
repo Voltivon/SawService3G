@@ -185,7 +185,7 @@ Reference: existing `<JsonLd>` component in `components/seo/` and helpers in `li
 | "Cypress" | `/service-area/cypress-tx` |
 | "The Woodlands" | `/service-area/the-woodlands-tx` |
 | "Conroe" | `/service-area/conroe-tx` |
-| "Request a quote" (CTA blocks ×2) | `/#quote` |
+| "Contact us" (CTA blocks ×2) | `/#contact` |
 | "Contact us" (footer-area CTA) | `/#contact` |
 | `tel:+12817045589` (phone link, appears ≥3 times) | call action |
 

@@ -86,7 +86,7 @@
 ## Internal links
 - "Hyd-Mech Band Saw Repair" → `/services/hyd-mech-band-saw-repair` (Brief 1) — primary CTA in decision tree + closing
 - "Authorized Hyd-Mech Dealer" → `/brands/hyd-mech` (Brief 2) — anchored in intro
-- "Request a quote" → `/#quote`
+- "Contact us" → `/#contact`
 - "Service area" → `/#coverage`
 - Phone link `tel:+12817045589`
 

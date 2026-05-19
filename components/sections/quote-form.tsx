@@ -61,18 +61,18 @@ export function QuoteForm() {
     >
       <div className="container-x grid gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="eyebrow">Contact us</p>
+          <p className="eyebrow">Send a message</p>
           <h2
             id="quote-heading"
             className="h-display mt-4 text-4xl text-white sm:text-5xl md:text-6xl"
           >
-            Tell us about the saw.
+            Or email us the details.
             <br />
-            <span className="text-spark-500">We&rsquo;ll take it from there.</span>
+            <span className="text-spark-500">We&rsquo;ll respond fast.</span>
           </h2>
           <p className="mt-5 max-w-md text-lg text-ink-300">
-            Fill out the form and we&rsquo;ll respond fast with next steps.
-            Prefer to talk?{" "}
+            Not urgent? Send the details and we&rsquo;ll respond by email with
+            next steps. Prefer to talk?{" "}
             <a
               href={site.phone.href}
               className="font-semibold text-white underline decoration-spark-500 underline-offset-4 hover:text-spark-300"

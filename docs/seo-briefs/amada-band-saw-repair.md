@@ -90,7 +90,7 @@ Source: `serp_organic_live_advanced` keyword=`amada band saw repair`, location=H
 - **Skip:** `Product`
 
 ## Internal links
-- "Get a quote" → `/#quote`
+- "Contact us" → `/#contact`
 - "Marvel band saw repair" → `/services/marvel-band-saw-repair` (sibling — same Oshkosh WI plant)
 - "Hyd-Mech band saw repair" → `/services/hyd-mech-band-saw-repair`
 - "About Saw Service 3G" → `/#about`

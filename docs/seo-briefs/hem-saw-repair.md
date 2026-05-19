@@ -89,7 +89,7 @@ Source: `serp_organic_live_advanced` keyword=`hem saw repair`, location=Houston 
 - **Skip:** `Product`
 
 ## Internal links
-- "Get a quote" → `/#quote`
+- "Contact us" → `/#contact`
 - "Hyd-Mech band saw repair" → `/services/hyd-mech-band-saw-repair`
 - "Marvel band saw repair" → `/services/marvel-band-saw-repair`
 - "About Saw Service 3G" → `/#about`

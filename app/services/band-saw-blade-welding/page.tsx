@@ -294,7 +294,7 @@ export default function BandSawBladeWeldingPage() {
             </a>
           </Magnetic>
           <Link
-            href="/#quote"
+            href="/#contact"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
           >
             Contact Us
@@ -360,7 +360,7 @@ export default function BandSawBladeWeldingPage() {
                   </Link>{" "}
                   for how we handle quotes, or{" "}
                   <Link
-                    href="/#quote"
+                    href="/#contact"
                     className="font-semibold text-spark-300 underline decoration-spark-500/50 underline-offset-4 hover:text-spark-200"
                   >
                     contact us
@@ -776,7 +776,7 @@ export default function BandSawBladeWeldingPage() {
                   </a>
                 </Magnetic>
                 <Link
-                  href="/#quote"
+                  href="/#contact"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-base font-semibold btn-ghost"
                 >
                   Contact Us

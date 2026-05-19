@@ -75,7 +75,7 @@
 ## Internal links
 - "Hyd-Mech Band Saw Repair" → `/services/hyd-mech-band-saw-repair` (Brief 1) — primary CTA
 - "Hyd-Mech S-20A Parts & Service Reference" → `/resources/hyd-mech-s-20a-parts-list` (Brief 3) — anchor on "S-20A" in model index
-- "Get a quote" → `/#quote`
+- "Contact us" → `/#contact`
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
 - "All brands we service" → `/#brands`

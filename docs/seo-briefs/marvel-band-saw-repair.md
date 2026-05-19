@@ -90,7 +90,7 @@ Source: `serp_organic_live_advanced` keyword=`marvel band saw repair`, location=
 - **Skip:** `Product` (this is a service)
 
 ## Internal links
-- "Get a quote" → `/#quote` (primary CTA)
+- "Contact us" → `/#contact` (primary CTA)
 - "Hyd-Mech band saw repair" → `/services/hyd-mech-band-saw-repair` (sibling cross-link, brand authority)
 - "About Saw Service 3G" → `/#about`
 - "Service area" → `/#coverage`
@@ -108,7 +108,7 @@ Source: `serp_organic_live_advanced` keyword=`marvel band saw repair`, location=
 - New page beyond Hyd-Mech. Create `app/services/marvel-band-saw-repair/page.tsx`.
 - Add route to `app/sitemap.ts`.
 - Extend Nav / Services submenu to include Marvel once page lands.
-- Reuse `QuoteForm` at bottom OR anchored CTA to `/#quote` (matches Hyd-Mech pattern).
+- Reuse `ContactSection` at bottom OR anchored CTA to `/#contact` (matches Hyd-Mech pattern).
 - **Honesty constraint:** Page must NOT claim authorized-dealer status for Marvel. Approved language: "experienced," "decades servicing," "every Marvel series," "trained on the Amada-Marvel platform." Forbidden language: "authorized," "factory-authorized," "OEM-certified," "factory-backed." Per owner intake, only Hyd-Mech carries that authorization.
 - Confirm `metadataBase` resolves canonical (apex vs www) per CLAUDE.md §10.
 
