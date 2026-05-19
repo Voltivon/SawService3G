@@ -18,8 +18,8 @@ export const faq: FaqItem[] = [
     a: "We come to you. Saw Service 3G is a fully mobile, on-site operation based in Spring, TX (north Greater Houston). We work directly on your floor, anywhere within a 100-mile primary radius — and we'll travel farther for the right customer.",
   },
   {
-    q: "Do you service industrial / metal band saws or woodworking band saws?",
-    a: "Industrial and metal band saws only — horizontal and vertical metal-cutting saws used in fab shops, machine shops, steel service centers, CNC shops, and tube & pipe yards. We don't service woodworking band saws.",
+    q: "Do you service industrial / metal band saws or wood-cutting band saws?",
+    a: "Primary focus is industrial metal-cutting band saws — horizontal and vertical saws in fab shops, machine shops, steel service centers, CNC shops, and tube & pipe yards. We're also open to wood shops running industrial-grade band saws like Northfield, Tannewitz, Wadkin, larger Laguna, Felder, and SCMI — same mechanical platform, just a different blade. Hobbyist tools (Jet, Powermatic, Grizzly, Rikon) aren't a fit for our truck-roll. Call us with your make and model and we'll tell you straight.",
   },
   {
     q: "Which band saw brands do you service?",
